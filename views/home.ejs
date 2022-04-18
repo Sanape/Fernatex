@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<%- include('./partials/head') %>
+
+<body>
+    <%- include('./partials/header') %>
+    <main>
+        <div class="presentacion"></div>
+        <div class="presentacionTransparent"></div>
+        <!----- Estampados ----->
+        <div class="body-container" id="body-container">
+            <div class="estampadosContainer" id="Estampados">
+                <div class="estampados">
+                    <img src="images/ui/up-arrow.png" id="arrowUp" onclick="enroll()">
+                    <h2>Desenrrolla nuestras ideas</h2>
+                </div>
+            </div>
+            <!-----  FIN Estampados ----->
+            <div></div>
+            <!----- Inicio Carruceles ----->
+
+            <!-- //TODO: Investigar infinit scroll para carrousel -->
+            <div class="Carousel">
+                
+                <img style="width: 100%;" src="images/ui/linea.png">
+                
+                <!-- Primer carrusel -->
+                <div class="slick-list" id="slick-list">
+                    <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path>
+                        </svg>
+                    </button>
+                    <div class="slick-track" id="track">
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/animal/1.jpg" alt="Rock and Roll Hall of Fame">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/animal/2.jpg" alt="Rock and Roll Hall of Fame">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/animal/3.jpg" alt="Rock and Roll Hall of Fame">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/animal/4.jpg" alt="Rock and Roll Hall of Fame">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/animal/5.jpg" alt="Rock and Roll Hall of Fame">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/animal/6.jpg" alt="Rock and Roll Hall of Fame">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/animal/7.jpg" alt="Rock and Roll Hall of Fame">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <img style="width: 100%;" src="images/ui/linea.png">
+                
+                <!-- Segundo carrusel -->
+                <div class="slick-list" id="slick-list">
+                    <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path>
+                        </svg>
+                    </button>
+                    <div class="slick-track" id="track">
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/1.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/2.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/3.jpg" alt="Rock and Roll Hall of Fame">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/4.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/5.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/6.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/7.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/8.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/9.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/10.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/11.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/11.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/11.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/infantil/11.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <img style="width: 100%;" src="images/ui/linea.png">
+                
+                <!-- Tercer carrusel -->
+                <div class="slick-list" id="slick-list">
+                    
+                    <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path>
+                        </svg>
+                    </button>
+
+                    <div class="slick-track" id="track">
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/rayados/1.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/rayados/2.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/rayados/3.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/rayados/4.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/rayados/4.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+                                    <picture>
+                                        <img src="images/estampados/rayados/4.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path>
+                        </svg>
+                    </button>
+                
+                </div>
+                <!-- Tercer carrusel -->
+
+            </div>
+            <!----- FIN Carruseles ----->
+
+            <div class="fondoTrianguloInvertido">
+                <!----- About  ----->
+                <div class="aboutContainer" id="AboutUs">
+
+                    <div class="tituloAbout">
+                        <h1>Acerca de Nosotros</h1>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quam laudantium ab adipisci, labore, aperiam consequatur temporibus minima quos sit modi fugit quibusdam. Ipsum temporibus asperiores consequatur, officia unde qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias tempore quaerat nihil voluptate aperiam qui repellendus sequi nobis dolorem veritatis, distinctio repellat ea numquam a eveniet unde doloremque itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, expedita exercitationem. Quaerat eligendi veniam voluptate expedita veritatis cum nisi assumenda, dicta sint quas dolorum fuga dolores voluptatibus dolorem ratione distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellendus distinctio ad quasi eos possimus officiis temporibus, nemo delectus sequi quos molestiae aliquam sapiente quod similique expedita, nobis minima provident?</p>
+
+                    </div>
+                </div>
+                <!----- FIN About  ----->
+
+                <!----- Carruseles OFERTAS ----->
+                <!-- <div class="ofertasContainer" id="Ofertas">
+                   
+
+                    <div class="slick-list" id="slick-list">
+                       
+                        <div class="slick-track" id="track">
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/6.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/1.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/2.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/3.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/4.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/5.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/6.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="slick-list" id="slick-list">
+                        
+                        <div class="slick-track" id="track">
+                            
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/1.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/2.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/2.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/3.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/5.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/6.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slick">
+                                <div>
+                                    <a href="/">
+                                        <picture>
+                                            <img src="images/estampados/animal/6.jpg" alt="Rock and Roll Hall of Fame">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div> -->
+                <!----- FIN Carruseles OFERTAS ----->
+
+                <!-----  Marcas  ----->
+                <div class="marcasContainer" id="Marcas">
+                    <div class="titulo-marcas">
+                        <h1>MARCAS CON LAS QUE TRABAJAMOS</h1>
+                    </div>
+                    <div class='contenedor-circulos'>
+                        <li>
+                            <div><img src="/images/logosMarcas/broer.png"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/cheeky.png"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/gaudi.png"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/grisino.png"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/julien.png"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/kosiuko.png"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/ladyjane.jpg"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/mora.png"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/paula.png"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/plegaria.png"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/como-quieres-que-te-quiera.png"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/tascani.png"></div>
+                        </li>
+                        <li>
+                            <div><img src="/images/logosMarcas/wanama.png"></div>
+                        </li>
+                    </div>
+                </div>
+                <!----- FIN Marcas  ----->
+            </div>
+            <div id="fondoTriangulo">
+                <!----- Newsletter  ----->
+                <div class="newsletterContainer" id="Contacto">
+                    <div class="tituloNewsletter">
+                        <h1>RECIBE LAS ÚLTIMAS NOVEDADES DE FERNATEX!</h1>
+                    </div>
+
+                    <div class="newsletterBox">
+                        <form action="action" method="POST">
+                            <label>Dejanos tu email</label>
+                            <input type="text" name="email">
+                            <button type="submit" class="button2" style="vertical-align:middle">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+                <!----- FIN Newsletter  ----->
+
+                <!----- Cotizador Home ----->
+                <div class="cotizadorHomeContainer" id="Cotizador">
+                    
+                    <div class="cotizadorTitulo">
+                        <h1>Recibí una cotización personalizada!</h1>
+                    </div>
+                    <div class="cotizadorImage">
+                        <img src="/images/cotizador_ej.png" alt="">
+                    </div>
+
+                    <div class="cotizadorTexto">
+                        <h1>Cotizador</h1></br>
+                        <p>En nuestro cotizador podras consultar el precio de un estampado sobre la tela que eligas <strong><u>en solo 3 simples pasos:</u></strong></p>
+                        <ol>
+                            <li>Elegí el tipo de tela</li>
+                            <li>Seleciona el estampado o carga una imagen del tuyo</li>
+                            <li>Ingresa tus datos de contacto</li>
+                        </ul>
+                        </ol>
+                        <p><strong>Y listo !</strong></p>
+                        <a href="/cotizador"><button class="button2" style="vertical-align:middle">Ir a Cotizador</button></a>
+                    </div>
+                    
+
+                    
+                </div>
+                <!----- FIN Cotizador Home  ----->
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="js/index.js"></script>
+<script src="js/slider.js"></script>
+
+</html>

@@ -1,0 +1,802 @@
+/* ---- General ---- */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: rgb(216,193,73);
+  background: linear-gradient(164deg, rgba(216,193,73,1) 0%, rgba(255,240,120,1) 40%, rgba(240,196,14,1) 100%);
+
+}
+
+button{
+  border-radius: 3px;
+  background-color: hsl(15, 40%, 35%);
+  transition-duration: 0.4s;
+}
+button:hover{
+  background-color: hsl(15, 37%, 45%);
+}
+a { 
+  text-decoration: none; 
+ }
+a:visited { 
+  text-decoration: none; 
+  color: inherit;
+ }
+.modal-backdrop.show{
+  position: inherit;
+}
+
+
+
+
+
+
+
+/* ---- Iconos Redes Sociales ---- */
+
+.socialBox{
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  height: 35%;
+}
+
+.iconsContainer{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  height: 100%;
+  margin-left: 4%;
+}
+
+.iconsContainer .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-direction:column;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+.iconsContainer .icon span{
+  position: relative;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  transition-duration: 0.4s;
+}
+
+.iconsContainer .icon span i{
+  font-size: 25px;
+  line-height: 60px;
+}
+/* 
+.iconsContainer .icon .tooltip{
+  background: #fff;
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  pointer-events:none;
+  transition: all 0.5s cubic-bezier(0.68, -0.55,0.265,1.55);
+}
+
+.iconsContainer .icon:hover .tooltip{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.iconsContainer .icon .tooltip:before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+} */
+
+.iconsContainer .icon:hover span,
+.iconsContainer .icon:hover .tooltip{
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+/* .iconsContainer .facebook:hover .tooltip{
+ background: #3B5998;
+ color: white;
+} */
+
+.iconsContainer .facebook:hover span{
+  background: #3B5998;
+  color: white;
+ }
+
+ /* .iconsContainer .whatsapp:hover .tooltip{
+  background: #25D366;
+  color: white;
+ } */
+ 
+ .iconsContainer .whatsapp:hover span{
+   background: #25D366;
+   color: white;
+  }
+
+  /* .iconsContainer .instagram:hover .tooltip{
+    background: #e70a71;
+    color: white;
+  } */
+
+  .iconsContainer .instagram:hover span{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);;
+    color: white;
+  }
+
+
+
+/* ---- Header ---- */
+header {
+  transition: all 1s ;
+  position: absolute;
+  width: 100vw;
+  z-index:100;
+}
+header.sticky{
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10001;
+  height: 75px;
+  background-color: hsl(34, 47%, 59%);
+  transition: all 0.5s ease-in;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 40%);
+}
+
+header.sticky .socialBox{
+  display: none;
+}
+header.sticky .logo-header img{
+  height: 70px;
+  width: 140px;
+}
+header.sticky .menuNavegacion{
+  justify-content:space-between;
+  margin:0 5%;
+}
+header.sticky .logo2Container {
+  height: 65px;
+  width: 65px;
+}
+
+header.sticky .logo2Container img{
+  height: 60px;
+  width: 60px;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + main {
+  padding-top: 75px;
+}
+
+/* ---- drawer ---- */
+#greyArea{
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-color: #00000044;
+}
+#greyArea.display{
+  display: block;
+}
+#drawer{
+  width: 45vw;
+  height: 101vh;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  padding: 30px 40px;
+  box-shadow: 0px 2px 18px 1px rgb(0 0 0 / 59%);
+  z-index: 10000;
+  visibility: hidden;
+}
+
+#drawer.visible{
+  visibility: visible;
+}
+
+#drawer img{
+ width:20px;
+ height:20px;
+ right:20px;
+ position:absolute;
+ cursor: pointer;
+}
+
+#drawer ul {
+  list-style: none;
+  color: #9d6451;
+}
+#drawer ul li{
+  margin: 20px 0;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+#drawer ul li a{
+  cursor: pointer;
+}
+#drawer ul li a:hover{
+  cursor: pointer;
+  color: hsl(15, 40%, 35%);
+  border-bottom: thin dashed;
+}
+
+header.sticky #drawer{
+  top: 75px;
+}
+/* ---- Logo header ---- */
+
+
+.logo-header img{
+  display:block;
+  margin:auto;
+  height: 12vw;
+  width: 28vw;
+  
+}
+
+
+.menuNavegacion{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ---- Header Menu ---- */
+.menu{
+  width:45%;
+}
+.menu ul{
+  font-family: sans-serif;
+  list-style: none;
+  display:flex;
+  justify-content: space-around;
+  align-self: flex-end;
+}
+
+.menu ul li{
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700; 
+
+}
+
+.menu ul li a{
+  color: white;
+  font-size: 18px;
+}
+
+.menu ul li a:hover {
+  cursor: pointer;
+  border-bottom: thin dashed;
+  color: #9d6451;
+}
+
+.logo2Container{
+  display: flex;
+  float: right;
+  border-radius:50%;
+  background-color: #9d6451;
+  box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.5);
+  height: 9vw;
+  width: 9vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo2Container img{
+  margin-top: 10px;
+  width:8vw;
+  height:8vw;
+}
+/* ---- Container principal ---- */
+
+.presentacion{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/ui/fabrica\ demo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+
+}
+.presentacionTransparent{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #00000044;
+}
+
+div.body-container {
+  margin: 5%;
+  margin-top: 88vh;
+  margin-bottom: 3vh;
+  position: absolute;
+  width: 90%;
+  border-radius:20px;
+  box-shadow: 0px 2px 18px 1px rgba(0,0,0,0.59);
+  background-color: white;
+}
+
+/* ---- Titulo estampados ---- */
+
+.estampadosContainer {
+  padding-bottom: 0%;
+  background: url('../images/ui/linea\ footerx2.png');
+  background-position: bottom;
+}
+
+.border {
+  width: 100%;
+  position: top center;
+}
+
+.estampados{
+  width: 100%;
+  text-align: center;
+  background: url('../images/tijeritas.png');
+  border-radius: 13px;
+  }
+.estampados img{
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  cursor: pointer;
+  filter: drop-shadow(0 3px 4px rgb(0 0 0 / 50%));
+}
+
+.estampados h2{
+  padding-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-shadow: 0px 2px 3.5px #000000aa;
+  color:hsl(15, 40%, 45%);
+}
+/* ---- Fondos ---- */
+
+.fondoTrianguloInvertido{
+  background: url('../images/ui/Triangulo_inv.png') no-repeat;
+  background-position-x: -1075px;
+  background-position-y: -635px;
+  background-size: auto;
+}
+
+/* ---- Marcas---- */
+
+.titulo-marcas{
+  margin-top: 5vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  text-align: center;
+  color: white;
+  text-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+}
+
+.marcasContainer{
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+/* ---- Ofertas Carruseles---- */
+
+
+.ofertasContainer{
+  width: 100%;
+  margin-top: 2%;
+}
+
+
+/* ---- About---- */
+.aboutContainer{
+  box-sizing: border-box;
+  margin-top: 70px;
+  padding: 40px 70px;
+  height:30vw;
+  line-height:2;
+  text-align: center;
+}
+
+.aboutContainer p, .aboutContainer h1{
+  color: white;
+  text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);
+}
+
+#fondoTriangulo{
+  background: url(../images/ui/Triangulo.png) no-repeat transparent;
+  background-position: center;
+  background-size: auto;
+  background-position-y: -345px;
+  background-position-x: -400px;
+  border-radius: 15px;
+}
+/* ---- Newsletter ---- */
+
+.newsletterContainer{
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background: url('../images/ui/Tarjeta\ Fernatex.png') no-repeat transparent;
+  background-position: center;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-size: cover;
+  height:40vw;
+}
+.newsletterContainer form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.newsletterContainer form input {
+  width: 100%;
+  height: 45px;
+  padding:5px 15px;
+  font-size: 18px;
+  border: none;
+  background-color: white;
+}
+.tituloNewsletter {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:white;
+}
+.tituloNewsletter h1{
+  text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);
+}
+
+.newsletterBox{
+  display: flex;
+  color:hsl(15, 37%, 45%);
+  font-size:20px;
+  font-weight:600;
+  flex-direction: column;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  width: 50%;
+  height: 7%;
+}
+
+.newsletterBox label{
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0px 3px 5px rgb(0 0 0 / 60%);
+}
+
+.newsletterBox input{
+  border-radius: 3px;
+  box-shadow: 0 3px 4px rgb(0 0 0 / 50%);
+}
+
+.newsletterBox button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 40%;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 40%);
+
+}
+
+
+/* ---- COTIZADOR Home ---- */
+
+.cotizadorHomeContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 70px;
+  padding: 40px;
+  padding-left: 30px;
+  padding-right: 50px;
+  height: 725px;
+  line-height: 2;
+  color: white;
+  border-radius: 15px;
+}
+
+.cotizadorTitulo h1{
+  display: none;
+}
+
+.cotizadorImage img{
+  border-radius: 25px;
+  box-shadow: 0 3px 4px rgb(0 0 0 / 50%);
+  width:45vw;
+  height:55vh;
+}
+
+.cotizadorTexto{
+  padding: 15px;
+  text-align: center;
+}
+.cotizadorTexto P{
+  text-align: left;
+}
+
+
+.cotizadorTexto ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 40px;
+  text-align: initial;
+}
+
+.cotizadorTexto button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 200px;
+  cursor: pointer;
+  box-shadow: 0 3px 4px rgb(0 0 0 / 50%);
+
+}
+
+
+
+
+
+
+
+
+
+/* ---- Media Querys  ---- */
+
+@media all and (max-width: 1400px) {
+  .menu{
+    width:50%;
+  }
+}
+@media all and (max-width: 1220px) {
+  .menu{
+    width:55%;
+  }
+
+  .titulo-marcas h1{
+    font-size: 1.8em;
+  }
+
+  #fondoTriangulo{
+    background-position-y: -715px;
+    background-position-x: -650px;
+  }
+}
+
+@media all and (max-width: 991px) {
+
+  .menuNavegacion {
+    margin: 0 10px;
+    justify-content: space-between;
+}
+
+  .menu{
+    display:none;
+  }
+
+
+  .logo2Container{
+    cursor: pointer;
+  }
+
+  .aboutContainer{
+
+    margin-top: 65px;
+    padding: 40px 60px;
+    height:60vh;
+
+  }
+
+  .newsletterContainer{
+
+    height:60vh;
+  }
+
+}
+
+@media all and (max-width: 768px) {
+  .estampados h2 {
+    padding: 15px;
+    font-size: 35px;
+    letter-spacing: 2px;
+  } 
+
+  .aboutContainer h1{
+    font-size: 35px;
+  }
+  .aboutContainer p{
+    font-size: 14px;
+  }
+
+  #fondoTriangulo{
+    background-position-y: -222px;
+    background-position-x: -1250px;
+  }
+
+  .cotizadorHomeContainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 150vh;
+    line-height: 2;
+    color: white;
+    border-radius: 15px;
+  }
+
+  .cotizadorTitulo h1{
+    display: block;
+    color: hsl(15, 40%, 35%);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);
+  }
+
+  .cotizadorImage img{
+    width:70vw;
+    height:55vh;
+  }
+}
+
+@media all and (max-width: 625px) {
+  .menuNavegacion {
+    margin: 0 20px;
+    justify-content: space-between;
+}
+  
+  .socialBox{ 
+    width: 40%;
+  } 
+
+  .iconsContainer .icon span{
+    height: 45px;
+    width: 45px;
+  }
+
+  .iconsContainer .icon span i {
+    line-height: 48px;
+  }
+
+  .aboutContainer h1{
+    font-size: 30px;
+  }
+  .aboutContainer p{
+    font-size: 12px;
+  }
+  .aboutContainer{
+    margin-top: 60px;
+    padding: 40px 40px;
+  }
+  .titulo-marcas h1{
+    font-size: 1.3em;
+  }
+
+  
+  .newsletterContainer{
+
+    height:65vh;
+  }
+  .newsletterBox{
+
+    width: 75%;
+    height: 14%;
+  }
+
+  #fondoTriangulo{
+    background-position-y: -145px;
+    background-position-x: -1450px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .socialBox{ 
+    width: 50%;
+  }
+
+  .iconsContainer .icon span{
+    height: 40px;
+    width: 40px;
+  }
+
+  .iconsContainer .icon span i {
+    line-height: 43px;
+    font-size: 22px;
+  }
+
+  header.sticky{
+    height: 50px;
+  }
+
+  header.sticky .logo-header img{
+    height: 45px;
+    width: 85px;
+  }
+
+  header.sticky .logo2Container img{
+    height: 50px;
+    width: 50px;
+  }
+
+  .estampados h2 {
+    padding: 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .aboutContainer h1{
+    font-size: 25px;
+  }
+  .aboutContainer p{
+    font-size: 12px;
+  }
+  .aboutContainer{
+    margin-top: 60px;
+    padding: 35px 25px;
+  }
+  .newsletterContainer{
+
+    height:65vh;
+  }
+  .newsletterBox{
+
+    width: 85%;
+    height: 17%;
+  }
+  .cotizadorImage img{
+    width:75vw;
+    height:50vh;
+  }
+}
+
+@media all and (max-width: 325px) {
+  .socialBox{ 
+    width: 50%;
+  } 
+}
