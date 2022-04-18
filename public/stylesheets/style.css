@@ -305,12 +305,13 @@ header.sticky #drawer{
   display: flex;
   float: right;
   border-radius:50%;
-  background-color: #9d6451;
+  background: linear-gradient(164deg, rgba(157,100,81,1) 0%, rgba(215,157,138,1) 40%, rgba(142,76,55,1) 100%);
   box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.5);
   height: 9vw;
   width: 9vw;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .logo2Container img{
