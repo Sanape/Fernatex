@@ -3,22 +3,18 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-body{
-  background: rgb(216,193,73);
-  background: linear-gradient(164deg, rgba(216,193,73,1) 0%, rgba(255,240,120,1) 40%, rgba(240,196,14,1) 100%);
 
-}
 
 button{
   border-radius: 3px;
-  background-color: hsl(15, 40%, 35%);
+  background-color: #e6b251;
   transition-duration: 0.4s;
 }
 button:hover{
-  background-color: hsl(15, 37%, 45%);
+  background-color: #997025;
 }
 a { 
   text-decoration: none; 
@@ -161,7 +157,7 @@ header.sticky{
   width: 100%;
   z-index: 10001;
   height: 75px;
-  background-color: hsl(34, 47%, 59%);
+  background-color: #e6b251;
   transition: all 0.5s ease-in;
   box-shadow: 0 3px 12px rgb(0 0 0 / 40%);
 }
@@ -231,7 +227,7 @@ header.sticky .logo2Container img{
 
 #drawer ul {
   list-style: none;
-  color: #9d6451;
+  color: #997025;
 }
 #drawer ul li{
   margin: 20px 0;
@@ -244,7 +240,7 @@ header.sticky .logo2Container img{
 }
 #drawer ul li a:hover{
   cursor: pointer;
-  color: hsl(15, 40%, 35%);
+  color: #997025;
   border-bottom: thin dashed;
 }
 
@@ -298,7 +294,12 @@ header.sticky #drawer{
 .menu ul li a:hover {
   cursor: pointer;
   border-bottom: thin dashed;
-  color: #9d6451;
+  color: #e6b251;
+}
+header.sticky .menu ul li a:hover {
+  cursor: pointer;
+  border-bottom: thin dashed;
+  color: #664E23;
 }
 
 .logo2Container{
@@ -329,9 +330,6 @@ header.sticky #drawer{
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
-
-
-
 }
 .presentacionTransparent{
   width: 100vw;
@@ -385,20 +383,22 @@ header.sticky #drawer{
 
 div.body-container {
   margin: 5%;
-  margin-top: 88vh;
+  margin-top: 80vh;
   margin-bottom: 3vh;
   position: absolute;
   width: 90%;
   border-radius:20px;
   box-shadow: 0px 2px 18px 1px rgba(0,0,0,0.59);
-  background-color: white;
+  background: url('../images/ui/telar4.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* ---- Titulo estampados ---- */
 
 .estampadosContainer {
   padding-bottom: 0%;
-  background: url('../images/ui/linea\ footerx2.png');
   background-position: bottom;
 }
 
@@ -410,7 +410,7 @@ div.body-container {
 .estampados{
   width: 100%;
   text-align: center;
-  background: url('../images/tijeritas.png');
+  /* background: url('../images/tijeritas.png'); */
   border-radius: 13px;
   }
 .estampados img{
@@ -423,16 +423,17 @@ div.body-container {
 
 .estampados h2{
   padding-bottom: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 40px;
+  font-size: 43px;
+  font-weight:700;
   letter-spacing: 4px;
   text-shadow: 0px 2px 3.5px #000000aa;
-  color:hsl(15, 40%, 45%);
+  color:#65E1E6;
+  color:#e6b251;
 }
 /* ---- Fondos ---- */
 
 .fondoTrianguloInvertido{
-  background: url('../images/ui/Triangulo_inv.png') no-repeat;
+  /* background: url('../images/ui/Triangulo_inv.png') no-repeat; */
   background-position-x: -1075px;
   background-position-y: -635px;
   background-size: auto;
@@ -478,7 +479,7 @@ div.body-container {
 }
 
 #fondoTriangulo{
-  background: url(../images/ui/Triangulo.png) no-repeat transparent;
+  /* background: url(../images/ui/Triangulo.png) no-repeat transparent; */
   background-position: center;
   background-size: auto;
   background-position-y: -345px;
@@ -521,7 +522,7 @@ div.body-container {
 
 .newsletterBox{
   display: flex;
-  color:hsl(15, 37%, 45%);
+  color:#997025;
   font-size:20px;
   font-weight:600;
   flex-direction: column;
@@ -720,7 +721,7 @@ div.body-container {
 
   .cotizadorTitulo h1{
     display: block;
-    color: hsl(15, 40%, 35%);
+    color: #997025;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);

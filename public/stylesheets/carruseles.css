@@ -3,15 +3,38 @@
 .Carousel{
   width: 100%;
   margin: 0%;
+  text-align: center;
 }
 .Carousel h2{
   font-size: 26px;
-  line-height: 38px;
-  padding-bottom: 24px;
+  line-height: 30px;
+  padding: 10px 20px;
+  margin-bottom: 24px;
   opacity: .9;
   text-transform: uppercase;
   letter-spacing: 10px;
   text-align: center;
+}
+.carousel-title{
+  width:100%;
+  margin-top:15px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-title span {
+  line-height: 25px;
+  margin: 10px auto;
+  width: 100%;
+}
+.carousel-title h2 {
+  color: white;
+  background-color: #89CCE9;
+  background-color: #A739E6;
+  background-color: #4E91E6;
+  border-radius:10px;
+  box-shadow: 0 3px 4px rgb(0 0 0 / 40%);
 }
 
 /* images */
