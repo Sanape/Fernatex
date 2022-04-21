@@ -12,7 +12,7 @@ const Colors = [
   'linear-gradient(164deg, rgba(232,209,67,1) 0%, rgba(245,230,144,1) 40%, rgba(201,184,43,1) 100%)',
   'linear-gradient(164deg, rgba(186,186,186,1) 0%, rgba(255,255,255,1) 40%, rgba(159,159,159,1) 100%)',
 ];
-const Words = ['pasion', 'entusiasmo', 'compromiso', 'seriedad'];
+const Words = ['pasión', 'entusiasmo', 'compromiso', 'seriedad'];
 
 let reset = (limit, i) => {
   i += 1;
@@ -21,11 +21,12 @@ let reset = (limit, i) => {
 };
 
 window.addEventListener('load', function () {
-  ChangeLogoBackground(Colors);
-  ChangeWord(Words);
+  //changeLogoBackground(Colors);
+  changeWord(Words);
+  underline();
 });
 
-function ChangeLogoBackground(Colors) {
+function changeLogoBackground(Colors) {
   let i = 0;
   setInterval(function () {
     document.getElementById('logo2Container').style.background = Colors[i];
@@ -33,10 +34,21 @@ function ChangeLogoBackground(Colors) {
   }, 2500);
 }
 
-function ChangeWord(Words) {
+function changeWord(Words) {
   let i = 0;
+  var word = document.getElementById('word');
   setInterval(function () {
-    i = reset(Words.length, i);
-    document.getElementById('word').innerHTML = Words[i];
-  }, 2500);
+    word.classList.add('transparent');
+    setTimeout(function () {
+      i = reset(Words.length, i);
+      word.innerHTML = Words[i];
+      word.classList.remove('transparent');
+    }, 900);
+  }, 2000);
+}
+
+function underline(){
+  setTimeout(function () {
+    document.getElementById('bannerText').classList.add('underline');
+  }, 2900);
 }
