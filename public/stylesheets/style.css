@@ -387,7 +387,7 @@ div.body-container {
   margin-bottom: 3vh;
   position: absolute;
   width: 90%;
-  border-radius:20px;
+  border-radius:5px;
   box-shadow: 0px 2px 18px 1px rgba(0,0,0,0.59);
   background: url('../images/ui/telar4.jpg') no-repeat;
   background-size: cover;
