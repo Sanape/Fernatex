@@ -299,7 +299,7 @@ header.sticky #drawer{
 header.sticky .menu ul li a:hover {
   cursor: pointer;
   border-bottom: thin dashed;
-  color: #664E23;
+  color: #4E91E6;
 }
 
 .logo2Container{
@@ -413,16 +413,23 @@ div.body-container {
   /* background: url('../images/tijeritas.png'); */
   border-radius: 13px;
   }
-.estampados img{
-  width: 40px;
-  height: 40px;
-  margin-top: 5px;
+ #flapUp{
+  width: 90px;
+  height: 95px;
+  position: absolute;
+  left: 47%;
+  bottom: 160px;
+  z-index: 0;
   cursor: pointer;
   filter: drop-shadow(0 3px 4px rgb(0 0 0 / 50%));
+  transition: all 1s;
+}
+#flapUp:hover{
+  bottom: 175px;
 }
 
 .estampados h2{
-  padding-bottom: 20px;
+  padding: 20px 0;
   font-size: 43px;
   font-weight:700;
   letter-spacing: 4px;
@@ -445,7 +452,7 @@ div.body-container {
   margin-top: 5vh;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
   text-align: center;
-  color: white;
+  color: #4E91E6;
   text-shadow: 0px 2px 6px rgba(0,0,0,0.4);
 }
 
@@ -474,7 +481,7 @@ div.body-container {
 }
 
 .aboutContainer p, .aboutContainer h1{
-  color: white;
+  color: #4E91E6;
   text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);
 }
 
@@ -514,7 +521,7 @@ div.body-container {
 .tituloNewsletter {
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:white;
+  color:#e6b251;
 }
 .tituloNewsletter h1{
   text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);
@@ -522,7 +529,7 @@ div.body-container {
 
 .newsletterBox{
   display: flex;
-  color:#997025;
+  color:#e6b251;
   font-size:20px;
   font-weight:600;
   flex-direction: column;
@@ -576,7 +583,7 @@ div.body-container {
   padding-right: 50px;
   height: 725px;
   line-height: 2;
-  color: white;
+  color: #4E91E6;
   border-radius: 15px;
 }
 

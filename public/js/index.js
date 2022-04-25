@@ -47,7 +47,7 @@ function changeWord(Words) {
   }, 2000);
 }
 
-function underline(){
+function underline() {
   setTimeout(function () {
     document.getElementById('bannerText').classList.add('underline');
   }, 2900);
