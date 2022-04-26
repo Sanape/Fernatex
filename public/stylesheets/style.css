@@ -299,7 +299,7 @@ header.sticky #drawer{
 header.sticky .menu ul li a:hover {
   cursor: pointer;
   border-bottom: thin dashed;
-  color: #4E91E6;
+  color: #997025;
 }
 
 .logo2Container{
@@ -346,8 +346,8 @@ header.sticky .menu ul li a:hover {
 }
 .presentacionTransparent h1{
   position: relative;
-  font-size: 4.5rem;
-  font-weight: 500;
+  font-size: 5.5rem;
+  font-weight: 600;
   overflow: hidden;
   padding-bottom: 10px;
   
@@ -355,7 +355,7 @@ header.sticky .menu ul li a:hover {
 .presentacionTransparent p{
   margin-top:30px;
   max-width: 70%;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .presentacionTransparent h1::after {
   content: '';
@@ -395,6 +395,14 @@ div.body-container {
   background-attachment: fixed;
 }
 
+
+div.body-container  p{
+  font-size:24px;
+}
+
+div.body-container  h1{
+  font-size:4.5rem;
+}
 /* ---- Titulo estampados ---- */
 
 .estampadosContainer {
@@ -421,7 +429,7 @@ div.body-container {
   bottom: 160px;
   z-index: 0;
   cursor: pointer;
-  filter: drop-shadow(0 3px 4px rgb(0 0 0 / 50%));
+  filter: drop-shadow(0 -1px 4px rgb(0 0 0 / 65%));
   transition: all 1s;
 }
 #flapUp:hover{
@@ -430,11 +438,16 @@ div.body-container {
 
 .estampados h2{
   padding: 20px 0;
-  font-size: 43px;
+  padding-bottom: 2px;
+  margin-bottom:20px;
+  font-size: 45px;
+  text-transform: uppercase;
+  width: 50%;
+  margin: 0 auto;
+  border-bottom: 3px dashed;
   font-weight:700;
   letter-spacing: 4px;
   text-shadow: 0px 2px 3.5px #000000aa;
-  color:#65E1E6;
   color:#e6b251;
 }
 /* ---- Fondos ---- */
@@ -449,16 +462,16 @@ div.body-container {
 /* ---- Marcas---- */
 
 .titulo-marcas{
-  margin-top: 5vh;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
   text-align: center;
-  color: #4E91E6;
+  color: #e6b251;
+  background: #4e91e6;
+  padding-top:20px;
   text-shadow: 0px 2px 6px rgba(0,0,0,0.4);
 }
 
 .marcasContainer{
   padding-bottom: 100px;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 /* ---- Ofertas Carruseles---- */
@@ -478,13 +491,39 @@ div.body-container {
   height:30vw;
   line-height:2;
   text-align: center;
+  position: relative;
+
+}
+.aboutContainer img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 0;
+  filter: blur(3px) grayscale(20%) brightness(80%);
+  transition: all 0.8s;
+}
+.aboutContainer:hover img
+{
+  filter: none;
 }
 
 .aboutContainer p, .aboutContainer h1{
-  color: #4E91E6;
   text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);
+  z-index: 1;
+  position: relative;
+  transition: all 0.5s;
 }
-
+.aboutContainer:hover p, .aboutContainer:hover h1{
+  opacity: 0;
+}
+.aboutContainer p{
+  color:#e6b251;
+}
+.aboutContainer h1{
+  color: #e6b251;
+}
 #fondoTriangulo{
   /* background: url(../images/ui/Triangulo.png) no-repeat transparent; */
   background-position: center;
@@ -498,7 +537,7 @@ div.body-container {
 .newsletterContainer{
   padding-bottom: 100px;
   padding-top: 100px;
-  background: url('../images/ui/Tarjeta\ Fernatex.png') no-repeat transparent;
+  background: url('../images/ui/Tarjeta fondo cotizador.png') no-repeat transparent;
   background-position: center;
   background-attachment: fixed;
   background-clip: border-box;
@@ -530,7 +569,7 @@ div.body-container {
 .newsletterBox{
   display: flex;
   color:#e6b251;
-  font-size:20px;
+  font-size:28px;
   font-weight:600;
   flex-direction: column;
   position: relative;
@@ -557,7 +596,7 @@ div.body-container {
   color: white;
   padding: 15px 32px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -573,24 +612,34 @@ div.body-container {
 
 .cotizadorHomeContainer{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
-  margin-top: 70px;
   padding: 40px;
   padding-left: 30px;
   padding-right: 50px;
   height: 725px;
   line-height: 2;
-  color: #4E91E6;
+  color: white;
   border-radius: 15px;
+  text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);
 }
 
 .cotizadorTitulo h1{
-  display: none;
+  color: #000;
+  text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);
 }
-
+.cotizadorHomeContainer .cotizadorContenido {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cotizadorImage {
+  z-index: 1;
+}
 .cotizadorImage img{
   border-radius: 25px;
   box-shadow: 0 3px 4px rgb(0 0 0 / 50%);
@@ -599,9 +648,21 @@ div.body-container {
 }
 
 .cotizadorTexto{
-  padding: 15px;
+  padding: 5px;
+  padding-left: 15px;
   text-align: center;
+  background: #4e91e6;
+  border-radius: 0 25px 25px 0;
+  box-shadow: 0 0px 4px #8b8b8b80 inset;
+  z-index: 0;
+  margin-left: -10px;
 }
+.cotizadorTexto div{
+  border: 4px dashed #fff;
+  border-radius: 0 25px 25px 0;
+  padding: 15px;
+}
+
 .cotizadorTexto P{
   text-align: left;
 }
@@ -625,8 +686,9 @@ div.body-container {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  width: 200px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 220px;
   cursor: pointer;
   box-shadow: 0 3px 4px rgb(0 0 0 / 50%);
 

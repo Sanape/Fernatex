@@ -6,12 +6,7 @@ function enroll() {
   });
 }
 
-const Colors = [
-  'linear-gradient(164deg, rgba(157,100,81,1) 0%, rgba(215,157,138,1) 40%, rgba(142,76,55,1) 100%)',
-  'linear-gradient(164deg, rgba(199,154,87,1) 0%, rgba(232,185,114,1) 40%, rgba(182,131,52,1) 100%)',
-  'linear-gradient(164deg, rgba(232,209,67,1) 0%, rgba(245,230,144,1) 40%, rgba(201,184,43,1) 100%)',
-  'linear-gradient(164deg, rgba(186,186,186,1) 0%, rgba(255,255,255,1) 40%, rgba(159,159,159,1) 100%)',
-];
+const Colors = ['#e6b251', '#4e91e6'];
 const Words = ['pasión', 'entusiasmo', 'compromiso', 'seriedad'];
 
 let reset = (limit, i) => {
@@ -36,14 +31,17 @@ function changeLogoBackground(Colors) {
 
 function changeWord(Words) {
   let i = 0;
+  let a = true;
   var word = document.getElementById('word');
   setInterval(function () {
     word.classList.add('transparent');
     setTimeout(function () {
       i = reset(Words.length, i);
+      a = !a;
       word.innerHTML = Words[i];
+      word.style.color = Colors[a ? 0 : 1];
       word.classList.remove('transparent');
-    }, 900);
+    }, 1000);
   }, 2000);
 }
 
