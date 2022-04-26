@@ -431,24 +431,58 @@ div.body-container  h1{
   cursor: pointer;
   filter: drop-shadow(0 -1px 4px rgb(0 0 0 / 65%));
   transition: all 1s;
+  animation-name: moveUpDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
 }
 #flapUp:hover{
+  animation: none;
   bottom: 175px;
 }
+@keyframes moveUpDown {
+  0%{
+    bottom: 160px;
+  }
+  10%{
+    bottom: 162px;
+  }
+  20%{
+    bottom: 164px;
+  }
+  40%{
+    bottom: 166px;
+  }
+  50%{
+    bottom: 168px;
+  }
+  65%{
+    bottom: 166px;
+  }
+  75%{
+    bottom: 164px;
+  }
+  85%{
+    bottom: 162px;
+  }
+  100%{
+    bottom: 160px;
+  }
 
+}
 .estampados h2{
-  padding: 20px 0;
-  padding-bottom: 2px;
-  margin-bottom:20px;
+  padding: 15px 0;
+  padding-bottom: 3px;
   font-size: 45px;
   text-transform: uppercase;
   width: 50%;
   margin: 0 auto;
   border-bottom: 3px dashed;
-  font-weight:700;
+  font-weight: 700;
   letter-spacing: 4px;
   text-shadow: 0px 2px 3.5px #000000aa;
-  color:#e6b251;
+  color: #e6b251;
+  margin-bottom: 30px;
 }
 /* ---- Fondos ---- */
 
