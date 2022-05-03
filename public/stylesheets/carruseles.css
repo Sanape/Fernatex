@@ -15,28 +15,42 @@
   letter-spacing: 10px;
   text-align: center;
 }
-.carousel-title{
+.carousel-categories{
   width:100%;
   margin-top:15px;
   display: flex;
-  flex-direction:column;
+  flex-direction:row;
   justify-content: center;
   align-items: center;
 }
-.carousel-title span {
+.carousel-categories span {
   line-height: 25px;
   margin: 10px auto;
   width: 100%;
 }
-.carousel-title h2 {
-  color: white;
+.carousel-categories h2 {
+  color: #F26363;
   background-color: #89CCE9;
   background-color: #A739E6;
-  background-color: #4E91E6;
+  background-color: #fff;
   border-radius:10px;
+  margin:10px 20px;
+  margin-bottom: 40px;
   box-shadow: 0 3px 4px rgb(0 0 0 / 40%);
+  cursor:pointer;
+  border: 2px solid #F26363;
+}
+.carousel-categories h2:hover{
+  background-color: #D95959;
+  color: #fff;
+
 }
 
+.carousel-categories h2.clicked
+{
+  color: #fff;
+  background-color: #F26363;
+}
 /* images */
 
 .slick-list{
@@ -79,7 +93,7 @@
 }
 .slick a img{
   object-fit: cover;
-  height: 200px;
+  height: 250px;
   width: 110%;
   border-radius: 4px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
@@ -112,7 +126,7 @@
 .slick-arrow svg{
   width: 12px;
   height: 100%;
-  color: #4e91e6;
+  color: #F26363;
 }
 .slick-prev{
   left: 3px;

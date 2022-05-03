@@ -1,10 +1,10 @@
 button{
-  border-radius: 3px !important;
-  background-color: #e6b251;
+  border-radius: 3px;
+  background-color: #F27983;
   transition-duration: 0.4s;
 }
 button:hover{
-  background-color: #997025;
+  background-color: #D95959;
 }
 
 .section{

@@ -4,9 +4,34 @@ function autoPlay(carousel) {
   console.log(carousel.querySelector('#track'));
 }
 
+const AnimalImages = [
+  '1.jpg',
+  '2.jpg',
+  '3.jpg',
+  '4.jpg',
+  '5.jpg',
+  '6.jpg',
+  '7.jpg',
+];
+const InfantilImages = [
+  '1.jpg',
+  '2.jpg',
+  '3.jpg',
+  '4.jpg',
+  '5.jpg',
+  '6.jpg',
+  '7.jpg',
+  '8.jpg',
+  '9.jpg',
+  '10.jpg',
+  '11.jpg',
+];
+const RayadosImages = ['1.jpg', '2.jpg', '3.jpg', '4.jpg'];
+
 window.onload = function (event) {
   var app = new App();
   window.app = app;
+  ChangeSlickCategorie('Animales');
   let carousels = document.getElementsByClassName('slick-list');
   for (let i = 0; i < carousels.length; i++) {
     // autoPlay(carousels[i]);
@@ -48,3 +73,72 @@ let nextAction = (leftPosition, trackWidth, listWidth, slickWidth, track) => {
     track.style.left = `0px`;
   }
 };
+
+var lastBtnClicked = '';
+function ChangeSlickCategorie(cat) {
+  var track = document.getElementById('track');
+  lastBtnClicked != '' ? lastBtnClicked.classList.remove('clicked') : null;
+  lastBtnClicked = document.getElementById(`${cat}CatBtn`);
+  lastBtnClicked.classList.add('clicked');
+  while (track.firstChild) {
+    track.removeChild(track.lastChild);
+  }
+  switch (cat) {
+    case 'Animales':
+      for (var i = 0; i < AnimalImages.length; i++) {
+        var slick = document.createElement('div');
+        slick.classList.add('slick');
+        var div = document.createElement('div');
+        var a = document.createElement('a');
+        a.href = '/';
+        var picture = document.createElement('picture');
+        var img = document.createElement('img');
+        img.alt = AnimalImages[i].toString();
+        img.src = `images/estampados/animal/${AnimalImages[i]}`;
+        picture.appendChild(img);
+        a.appendChild(picture);
+        div.appendChild(a);
+        slick.appendChild(div);
+        track.appendChild(slick);
+      }
+      break;
+    case 'Rayados':
+      for (var i = 0; i < RayadosImages.length; i++) {
+        var slick = document.createElement('div');
+        slick.classList.add('slick');
+        var div = document.createElement('div');
+        var a = document.createElement('a');
+        a.href = '/';
+        var picture = document.createElement('picture');
+        var img = document.createElement('img');
+        img.alt = RayadosImages[i].toString();
+        img.src = `images/estampados/rayados/${RayadosImages[i]}`;
+        picture.appendChild(img);
+        a.appendChild(picture);
+        div.appendChild(a);
+        slick.appendChild(div);
+        track.appendChild(slick);
+      }
+      break;
+    case 'Infantiles':
+      for (var i = 0; i < InfantilImages.length; i++) {
+        var slick = document.createElement('div');
+        slick.classList.add('slick');
+        var div = document.createElement('div');
+        var a = document.createElement('a');
+        a.href = '/';
+        var picture = document.createElement('picture');
+        var img = document.createElement('img');
+        img.alt = InfantilImages[i].toString();
+        img.src = `images/estampados/infantil/${InfantilImages[i]}`;
+        picture.appendChild(img);
+        a.appendChild(picture);
+        div.appendChild(a);
+        slick.appendChild(div);
+        track.appendChild(slick);
+      }
+      break;
+    default:
+      break;
+  }
+}
