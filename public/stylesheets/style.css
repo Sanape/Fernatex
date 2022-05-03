@@ -566,7 +566,7 @@ div.body-container  h1{
   padding: 0px 15px;
 }
 .aboutContainer .imagesContainer{
-  width: 40vw;
+  width: 45vw;
   height: 100%;
 }
 
@@ -611,11 +611,11 @@ div.body-container  h1{
 
 .aboutContainer p{
   color:#0d0d0d;
-  font-size:20px !important;
+  font-size:18px !important;
 }
 .aboutContainer h1{
   color: #F27983;
-  font-size:4rem !important;
+  font-size:3.5rem !important;
 }
 #fondoTriangulo{
   /* background: url(../images/ui/Triangulo.png) no-repeat transparent; */
