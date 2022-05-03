@@ -50,9 +50,10 @@ h3{
 
 .socialBox{
   display: flex;
-  padding: 10px;
   width: 100%;
-  height: 35%;
+  justify-content: center;
+  margin: 50px 0;
+  color: #7B77F2;
 }
 
 .iconsContainer{
@@ -60,7 +61,6 @@ h3{
   flex-direction: row;
   list-style: none;
   height: 100%;
-  margin-left: 4%;
 }
 
 .iconsContainer .icon{
@@ -653,6 +653,7 @@ div.body-container  h1{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 .newsletterContainer form input {
   width: 100%;
@@ -677,10 +678,11 @@ div.body-container  h1{
   font-size:28px;
   font-weight:600;
   flex-direction: column;
+  align-items: center;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4%;
+  margin-top: 5%;
   width: 50%;
   height: 7%;
 }
