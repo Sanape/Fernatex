@@ -39,9 +39,12 @@ hr{
 }
 
 h2{
-  font-size: 45px;
+  font-size: 40px;
 }
-
+h3{
+  font-size: 30px;
+  color:#F27983;
+}
 
 /* ---- Iconos Redes Sociales ---- */
 
@@ -373,7 +376,7 @@ header.sticky .menu ul li a:hover {
 }
 .presentacionTransparent h1{
   position: relative;
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 600;
   overflow: hidden;
   padding-bottom: 10px;
@@ -625,14 +628,26 @@ div.body-container  h1{
 /* ---- Newsletter ---- */
 
 .newsletterContainer{
-  padding-bottom: 100px;
-  padding-top: 100px;
-  background: url('../images/ui/Tarjeta fondo cotizador.png') no-repeat transparent;
   background-position: center;
   background-attachment: fixed;
   background-clip: border-box;
   background-size: cover;
   height:40vw;
+  position: relative;
+  background: url('../images/ui/Tarjeta fondo cotizador.png') no-repeat transparent;
+}
+
+.newsletterContainer #backgroudTransparent{
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background:hsla(242, 83%, 71%, 0.8);
+  background-position: center;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .newsletterContainer form{
   display: flex;
