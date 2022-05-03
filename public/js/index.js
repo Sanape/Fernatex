@@ -1,6 +1,6 @@
 function enroll() {
   window.scrollBy({
-    top: 800,
+    top: 850,
     left: 0,
     behavior: 'smooth',
   });
@@ -66,9 +66,9 @@ const swiper = new Swiper('.swiper', {
   effect: 'cards',
   grabCursor: true,
   // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  // pagination: {
+  //   el: '.swiper-pagination',
+  // },
 
   // Navigation arrows
   navigation: {
