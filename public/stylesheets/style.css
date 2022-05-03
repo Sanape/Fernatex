@@ -399,7 +399,7 @@ header.sticky .menu ul li a:hover {
 }
 .presentacionTransparent #word{
   transition: all 1s;
-  color : #0D0D0D;
+  color : #F27983;
   text-shadow: 0 3px 2px black;
 }
 .presentacionTransparent #word.transparent{
