@@ -57,9 +57,9 @@
             </section>
             <!----- FIN Carruseles ----->
 
-            <div class="fondoTrianguloInvertido">
+
                 <!----- About  ----->
-                <div class="aboutContainer" id="AboutUs">
+                <section class="aboutContainer" id="AboutUs">
                     <div class="imagesContainer">
 
                         <div class="swiper">
@@ -89,11 +89,45 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quam laudantium ab adipisci, labore, aperiam consequatur temporibus minima quos sit modi fugit quibusdam. Ipsum temporibus asperiores consequatur, officia unde qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam alias tempore quaerat nihil voluptate aperiam qui repellendus sequi nobis dolorem veritatis, distinctio repellat ea numquam a eveniet unde doloremque itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, expedita exercitationem. Quaerat eligendi veniam voluptate expedita veritatis cum nisi assumenda, dicta sint quas dolorum fuga dolores voluptatibus dolorem ratione distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellendus distinctio ad quasi eos possimus officiis temporibus, nemo delectus sequi quos molestiae aliquam sapiente quod similique expedita, nobis minima provident?</p>
 
                     </div>
-                </div>
+                </section>
                 <!----- FIN About  ----->
                 <img class="linea" src="images/ui/linea.svg">
+                
+                <!----- Cotizador Home ----->
+                <section class="cotizadorHomeContainer" id="Cotizador">
+    
+                    <!-- <div class="cotizadorTitulo">
+                        <h1>Recibí una cotización personalizada!</h1>
+                    </div> -->
+                    <div class="cotizadorContenido">
+                        <!-- <div class="cotizadorImage">
+                            <img src="/images/cotizador_ej.png" alt="">
+                        </div> -->
+    
+                        <article class="cotizadorTexto">
+                            <div>
+                                <h1>Cotizador</h1></br>
+                                <p>En nuestro cotizador podras consultar el precio de un estampado sobre la tela que eligas <strong><u>en solo 3 simples pasos:</u></strong></p>
+                                <ol>
+                                    <li>Elegí el tipo de tela</li>
+                                    <li>Seleciona el estampado o carga una imagen del tuyo</li>
+                                    <li>Ingresa tus datos de contacto</li>
+                                </ul>
+                                </ol>
+                                <p><strong>Y listo !</strong></p>
+                            </div>
+                        </article>
+                        <div class="btnBox">
+                            <a href="/cotizador"><button class="button2" style="vertical-align:middle">Cotiza tu estampado!</button></a>
+                            <div id="btnShadow"></div>
+                        </div>
+                    </div>
+                </section>
+                <!----- FIN Cotizador Home  ----->
+                <img class="linea" src="images/ui/linea.svg">
+                
                 <!-----  Marcas  ----->
-                <div class="marcasContainer" id="Marcas">
+                <section class="marcasContainer" id="Marcas">
                     <div class="titulo-marcas">
                         <h2>MARCAS CON LAS QUE TRABAJAMOS</h2>
                     </div>
@@ -138,18 +172,19 @@
                             <div><img src="/images/logosMarcas/wanama.png"></div>
                         </li>
                     </div>
-                </div>
+                </section>
                 <!----- FIN Marcas  ----->
-            </div>
-            <div id="fondoTriangulo">
+
+
+                    
                 <!----- Newsletter  ----->
 
-                <div class="newsletterContainer" id="Contacto">
+                <section class="newsletterContainer" id="Contacto">
                     <div id="backgroudTransparent">
                         <div class="tituloNewsletter">
                             <h1>RECIBE LAS ÚLTIMAS NOVEDADES DE FERNATEX!</h1>
                         </div>
-    
+
                         <div class="newsletterBox">
                             <form action="action" method="POST">
                                 <label>Dejanos tu email</label>
@@ -172,44 +207,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
                 <!----- FIN Newsletter  ----->
-
-                <!----- Cotizador Home ----->
-                <div class="cotizadorHomeContainer" id="Cotizador">
-                    
-                    <div class="cotizadorTitulo">
-                        <h1>Recibí una cotización personalizada!</h1>
-                    </div>
-                    <div class="cotizadorContenido">
-                        <div class="cotizadorImage">
-                            <img src="/images/cotizador_ej.png" alt="">
-                        </div>
-    
-                        <article class="cotizadorTexto">
-                            <div>
-                                <h1>Cotizador</h1></br>
-                                <p>En nuestro cotizador podras consultar el precio de un estampado sobre la tela que eligas <strong><u>en solo 3 simples pasos:</u></strong></p>
-                                <ol>
-                                    <li>Elegí el tipo de tela</li>
-                                    <li>Seleciona el estampado o carga una imagen del tuyo</li>
-                                    <li>Ingresa tus datos de contacto</li>
-                                </ul>
-                                </ol>
-                                <p><strong>Y listo !</strong></p>
-                                <a href="/cotizador"><button class="button2" style="vertical-align:middle">Ir a Cotizador</button></a>
-                            </div>
-                        </article>
-                    </div>
                     
 
-                    
-                </div>
-                <!----- FIN Cotizador Home  ----->
-            </div>
         </div>
     </main>
 </body>
+<%- include('./partials/footer') %>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/index.js"></script>
 <script src="js/slider.js"></script>

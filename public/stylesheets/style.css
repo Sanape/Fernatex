@@ -43,7 +43,7 @@ h2{
 }
 h3{
   font-size: 30px;
-  color:#F27983;
+  color:#0D0D0D;
 }
 
 /* ---- Iconos Redes Sociales ---- */
@@ -166,7 +166,7 @@ header {
 header.sticky{
 
   position: fixed;
-  top: 40px;
+  top: 0px;
   width: 100%;
   z-index: 10001;
   height: 75px;
@@ -282,7 +282,25 @@ header.sticky #drawer{
 
 /* ---- Header Menu ---- */
 .menu{
-  width:45%;
+  width:60%;
+}
+.menu button{
+  padding: 5px 10px;
+  color: white;
+  border: 2px solid white;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  margin: -7px 0;
+  cursor: pointer;
+}
+header .menu button:hover{
+  color: white;
+  border: 2px solid white;
+
+}
+.menu button span{
+  font-size: 20px;
 }
 .menu ul{
   font-family: sans-serif;
@@ -334,19 +352,8 @@ header.sticky .menu ul li a:hover {
   height:8vw;
 }
 
-#headerTop{
-  background-color: #9CA4A6;
-  color: #F27983;
-  height: 40px;
-  width: 100vw;
-  z-index: 1;
-  display:none;
-}
 
-#headerTop.sticky{
-  display: flex;
-  position: fixed;
-}
+
 /* ---- Container principal ---- */
 
 .presentacion{
@@ -438,7 +445,7 @@ div.body-container {
   width: 90%;
   border-radius:5px;
   box-shadow: 0px -3px 8px 2px rgba(0,0,0,0.65);
-  background: url('../images/ui/telar7.jpg') no-repeat;
+  background: url('../images/ui/telar4.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -545,9 +552,9 @@ div.body-container  h1{
 
 .titulo-marcas{
   text-align: center;
-  color: #F27983;
+  color: #0D0D0D;
   padding-top:20px;
-  text-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+  /* text-shadow: 0px 2px 6px rgba(0,0,0,0.4); */
 }
 
 .marcasContainer{
@@ -619,14 +626,14 @@ div.body-container  h1{
 } */
 
 .aboutContainer p, .aboutContainer h1{
-  text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);
+  /* text-shadow: 0px 2px 6px rgb(0 0 0 / 40%); */
   z-index: 1;
   position: relative;
   transition: all 0.5s;
 }
 
 .aboutContainer p{
-  color:#fff;
+  color:#0d0d0d;
   font-size:18px !important;
 }
 .aboutContainer h1{
@@ -757,7 +764,7 @@ div.body-container  h1{
   flex-direction: row;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
 }
 .cotizadorImage {
@@ -772,22 +779,23 @@ div.body-container  h1{
 
 .cotizadorTexto{
   padding: 5px;
-  padding-left: 20px;
+  max-width:50vw;
+  margin-right: 20px;
   text-align: center;
   background: #7B77F2;
-  border-radius: 0 25px 25px 0;
+  border-radius:  25px;
   box-shadow: 0 0px 4px #8b8b8b80 inset;
   z-index: 0;
   margin-left: -16px;
 }
 .cotizadorTexto div{
   border: 4px dashed #fff;
-  border-radius: 0 25px 25px 0;
+  border-radius: 25px;
   padding: 15px;
 }
 
 .cotizadorTexto P{
-  text-align: left;
+  text-align: center;
 }
 
 
@@ -800,26 +808,73 @@ div.body-container  h1{
   text-align: initial;
 }
 
-.cotizadorTexto button {
+.cotizadorContenido button {
   border: none;
-  color: white;
-  padding: 15px 32px;
-  margin: 0 auto;
-  margin-top: 15px;
+  color: #0D0D0D;
+  font-weight: bold !important;
+  font-size:23px !important;
+  padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
   font-weight: 500;
-  width: 220px;
+  width: 280px;
   cursor: pointer;
   box-shadow: 0 3px 4px rgb(0 0 0 / 50%);
+  border: 2px solid #0D0D0D;
+  Background-color: #7B77F2;
+  height:60px;
+  z-index: 1;
+  bottom:0;
+  position: absolute;
+  border-radius: 4px;
+}
+.cotizadorContenido .btnBox{
+  position: relative;
+  width: 300px;
+  height: 80px;
+  animation: move 5s infinite;
 
 }
+.cotizadorContenido .btnBox:hover button{
+  background-color:#D95959;
+  transition-duration: 0.4s;
+  color: white;
+  border:none;
+}
+.cotizadorContenido .btnBox:hover #btnShadow{
+  background-color:#D95959;
+  transition-duration: 0.6s;
+  bottom: 0px;
+  right: 20px;
+}
+.cotizadorContenido .btnBox:hover{
+  animation:none;
+}
+.cotizadorContenido #btnShadow{
+  Background-color: #7B77F2;
+  width: 280px;
+  height:60px;
+  position: absolute;
+  bottom: -10px;
+  right: 8px;
+  z-index: 0;
+  border-radius: 4px;
+}
 
+@keyframes move {
+  from{
+    transform: translateX(0px) translatey(0px);
+  }
+  50%{
+    transform: translateX(20px) translatey(20px);
+  }
+  to{
+    transform: translateX(0px) translatey(0px);
 
-
-
+  }
+}
 
 
 

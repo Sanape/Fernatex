@@ -16,7 +16,6 @@
   text-align: center;
 }
 .Carousel h3{
-  text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);
   letter-spacing: 2px;
 }
 .Carousel h2{
@@ -41,9 +40,10 @@
   border-radius:10px;
   margin:10px 20px;
   margin-bottom: 40px;
-  box-shadow: 0 3px 4px rgb(0 0 0 / 40%);
   cursor:pointer;
   border: 2px solid #F26363;
+  transition: all 1s;
+
 }
 .carousel-categories h2:hover{
   background-color: #D95959;
