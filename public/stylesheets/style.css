@@ -6,8 +6,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
-
-
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
 button{
   border-radius: 3px;
   background-color: #F27983;
@@ -265,7 +269,7 @@ header.sticky #drawer{
 
 .logo-header img{
   display:block;
-  margin:auto;
+  margin:5px auto;
   height: 12vw;
   width: 28vw;
   
@@ -297,7 +301,7 @@ header.sticky #drawer{
 header .menu button:hover{
   color: white;
   border: 2px solid white;
-
+  background-color: #D95959;
 }
 .menu button span{
   font-size: 20px;
@@ -459,19 +463,16 @@ div.body-container  p{
 div.body-container  h1{
   font-size:4.5rem;
 }
-/* ---- Titulo estampados ---- */
+/* ---- Titulo ---- */
 
-.estampadosContainer {
-  padding-bottom: 0%;
-  background-position: bottom;
-}
+
 
 .border {
   width: 100%;
   position: top center;
 }
 
-.estampados{
+.enroll{
   width: 100%;
   text-align: center;
   /* background: url('../images/tijeritas.png'); */
@@ -526,7 +527,7 @@ div.body-container  h1{
   }
 
 }
-.estampados h2{
+.enroll h2{
   padding: 15px 0;
   padding-bottom: 3px;
   text-transform: uppercase;
@@ -539,6 +540,158 @@ div.body-container  h1{
   color: #F27983;
   margin-bottom: 30px;
 }
+
+/* ---- Estampados ---- */
+#Estampados h3,
+#Estampados h1{
+  line-height: 30px;
+  padding: 10px 20px;
+  opacity: .9;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+#Estampados h1{
+  margin: 50px 0;
+  margin-top:100px;
+  color:#7B77F2;
+}
+
+
+.estamapados-catalogo{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 20px;
+  padding-left:80px;
+  overflow-y:scroll;
+  max-height:80vh;
+  position: relative;
+}
+
+.estamapados-categories{
+  width:100%;
+  margin-top:15px;
+  padding-right: 20%;
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background:transparent;
+}
+.estamapados-categories span {
+  line-height: 25px;
+  margin: 10px auto;
+  width: 100%;
+}
+.estamapados-categories h3 {
+  background-color: transparent;
+  border-radius:10px;
+  margin:10px 20px;
+  margin-bottom: 40px;
+  cursor:pointer;
+  border: 2px solid #7B77F2;
+  color:#7B77F2;
+  transition: all 1s;
+}
+
+
+#view-Rayados .estamapados-categories{
+  justify-content: flex-start;
+  padding-left: 10%;
+
+}
+
+
+.estamapados-categories h3:hover{
+  background-color: #7B77F2;
+  color: #fff;
+
+}
+
+.estamapados-categories h3.clicked
+{
+  color: #fff;
+  background-color: #F26363;
+}
+
+.estamapados-catalogo .list{
+  margin:0;
+  margin-top: 40px;
+  max-width:51%;
+}
+.estamapados-catalogo .list img {
+  margin: 20px 40px;
+  width: 320px;
+  height: 350px;
+  border-radius:10px;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 40%);
+}
+
+#view-Rayados .list{
+  margin-left: auto;
+}
+.estamapados-view {
+  position: relative;
+}
+.listContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.estamapados-view .ilustration{
+  width: 720px;
+  height: 400px;
+  background-image: url(../images/ilustraciones/animales.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: sticky;
+  top: 15%;
+}
+.estamapados-view .ilustration.animales{
+
+  background-image: url(../images/ilustraciones/animales.svg);
+
+}
+.estamapados-view .ilustration.rayados{
+
+  background-image: url(../images/ilustraciones/rayados.svg);
+  height: 574px;
+}
+.estamapados-view .ilustration.infantiles{
+
+  background-image: url(../images/ilustraciones/infantiles.svg);
+  height: 535px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---- Fondos ---- */
 
 .fondoTrianguloInvertido{
@@ -875,11 +1028,53 @@ div.body-container  h1{
 
   }
 }
+/* ---- footer ----*/ 
+footer{
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+  background-color:white;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  color:#F27983;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 0 0 5px 5px;
+}
 
-
-
-
-
+footer span {
+  padding: 10px 20px;
+  border: 2px solid #F27983;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 600;
+}
+footer span:hover{
+  background-color:#F27983;
+  color:white;
+  border-color:white;
+}
+#suriSlug{
+  position: absolute;
+  z-index: 100000000;
+  width: 100vw;
+  right: 0;
+  text-align: right;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 535vh;
+  padding:0 20px;
+  padding-left: 30px;
+}
+#suriSlug h4 a{
+  text-decoration:underline;
+}
+#suriSlug h4 a:hover{
+  color: #7B77F2;
+  text-decoration: none;
+}
 /* ---- Media Querys  ---- */
 
 @media all and (max-width: 1400px) {

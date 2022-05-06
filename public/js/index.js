@@ -1,9 +1,25 @@
-function enroll() {
+function enroll(a) {
   window.scrollBy({
-    top: 850,
+    top: a,
     left: 0,
     behavior: 'smooth',
   });
+}
+function scroolTo(cat) {
+  var bodyRect = document.body.getBoundingClientRect();
+  switch (cat) {
+    case 'Animales':
+      document.getElementById('view-Animales').scrollIntoView();
+      break;
+    case 'Rayados':
+      document.getElementById('view-Rayados').scrollIntoView();
+      break;
+    case 'Infantiles':
+      document.getElementById('view-Infantiles').scrollIntoView();
+      break;
+    default:
+      break;
+  }
 }
 
 const Colors = ['#e6b251', '#4e91e6'];
