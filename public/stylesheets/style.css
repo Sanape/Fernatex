@@ -582,6 +582,7 @@ div.body-container  h1{
   position: sticky;
   top: 0;
   background:transparent;
+  z-index: 2;
 }
 .estamapados-categories span {
   line-height: 25px;
@@ -652,6 +653,7 @@ div.body-container  h1{
   background-size: cover;
   background-position: center;
   position: sticky;
+  z-index: 1;
   top: 15%;
 }
 .estamapados-view .ilustration.animales{
