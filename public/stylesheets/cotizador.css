@@ -1,5 +1,15 @@
+
+header {
+  transition: all 1s ;
+  position: fixed;
+  width: 100vw;
+  z-index:100;
+}
+
+
+
 button{
-  border-radius: 3px;
+  border-radius: 3px !important;
   background-color: #F27983;
   transition-duration: 0.4s;
 }
@@ -7,22 +17,50 @@ button:hover{
   background-color: #D95959;
 }
 
-.section{
-  min-height: 100vh;
-  width: 100%;
+a { 
+  text-decoration: none !important; 
+ }
+
+a:visited { 
+  text-decoration: none ; 
+  color: inherit;
+ }
+ a:hover{
+   color:white !important;
+ }
+#cotizador{
+  width: 100vw;
+  height: 100vh;
   display: flex ;
   align-items: center;
   justify-content: center;
-  background-color: aliceblue;
+  background: url('../images/ui/Tarjeta fondo cotizador.png') no-repeat transparent;
+  background-size: cover;
+  position:fixed;
 }
 
-.cotizador{
+.menu ul li{
+  visibility: hidden;
+}
+.homeBtn{
+  display: block;
+}
+.homeBtn button{
+  padding: 0 10px;
+}
+.homeBtn strong{
+  padding: 0px 4px;
+  font-size: 25px;
+}
+
+
+.cotizadorContainer{
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
   color: white;
   border:none;
-  background-color: hsla(0, 0%, 0%, 0.753);
+  background-color: hsla(0, 0%, 95%, 0.92);
   box-shadow: 0px 1px 6px #000000aa;
   padding: 20px;
   border-radius: 6px;
@@ -36,33 +74,23 @@ button:hover{
   display: block;
 }
 
-.cotizadorBody{
+/* .cotizadorBody{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
-}
+} */
 
-.cotizadorBody main section{
+.cotizadorBody .cotizador{
   position: fixed;
   width: 100vw;
   height: 80vh;
   z-index: 1;
-  top: 30%;
+  top: 0;
 
 }
 
-.cotizadorHeader{
- display: flex;
- flex-direction: row;
- flex-wrap: nowrap;
- justify-content: space-between;
- background: url('../images/ui/Tarjeta\ fondo\ cotizador.png')  no-repeat center center;
- background-size: cover;
- height: 40vh;
- box-shadow: 0px 3px 6px #00000055;
-}
 
 .cotizadorTitle{
   padding: 20px;
@@ -90,22 +118,18 @@ button:hover{
 
 
 
-.cotizadorFondo{
-  height: 60vh;
-  width: 100vw;
-  background: url('../images/ui/Fondo\ tela\ cotizador.png')  no-repeat center center;
-  background-size: cover;
-}
 
 .form-group{
   width: 100%;
   margin-top: 20px;
-  color:hsl(15, 37%, 45%);
+  color:#F27983;
   font-weight: 600;
 }
 
 .form-group label{
   margin: 5px 0;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px #0d0d0db0;
 }
 
 .form-group input {
@@ -122,13 +146,13 @@ button.prev-btn,
 button.sub-btn{
   margin-top: 20px;
   padding: 10px 30px;
-  border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
   cursor: pointer;
   background-color: transparent;
-  color: #9D6451;
-  border: 2px solid #9D6451;
+  color: #F27983;
+  border: 2px solid #F27983;
   transition-duration: 0.4s;
   border-radius: 12px;
 }
@@ -136,7 +160,7 @@ button.sub-btn{
 button.next-btn:hover,
 button.prev-btn:hover,
 button.sub-btn:hover{
-  background-color: #9D6451;
+  background-color: #F27983;
   color: white;
 }
 
@@ -148,4 +172,36 @@ button.sub-btn:hover{
   width: 33.33%;
   float: left;
   padding: 5px;
+}
+
+.contact-container {
+  margin: 5%;
+  margin-top: 92vh;
+  margin-bottom: 3vh;
+  position: absolute;
+  width: 90%;
+  border-radius:5px;
+  box-shadow: 0px -3px 8px 2px rgba(0,0,0,0.65);
+  background: url('../images/ui/telar4.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.newsletterContainer {
+  height: 32vw;
+}
+.newsletterContainer #backgroudTransparent {
+  padding-top: 50px;
+}
+
+#suriSlug {
+  margin-top: 165vh;
+}
+
+#suriSlug h4 a{
+  text-decoration:underline !important;
+}
+#suriSlug h4 a:hover{
+  color: #7B77F2 !important;
+  text-decoration: none !important;
 }

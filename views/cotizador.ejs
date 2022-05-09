@@ -17,21 +17,12 @@
 
 <body class="cotizadorBody">
     
+    <%- include('./partials/header') %>
     <main>
 
-        <Header class="cotizadorHeader">
-                <div class="cotizadorTitle">
-                    <h1>Cotizador</h1>
-                    <a href="/"><button class="button2" style="vertical-align:middle"> &#8592; Volver al Home</button></a>
-                </div>
-                <div class="logo-header">
-                    <a href="/" class="logo nav-link"><img src="/images/ui/logo_blanco.png" alt="Fernatex-logo" class="image-logo"></a>
-                </div>
-        </Header>
-        <div class="cotizadorFondo"></div>
 
-        <section>
-            <div class="cotizador">
+        <section id="cotizador">
+            <div class="cotizadorContainer">
                 <form action="/confirm">        
                     <div class="step step-1 index active">
                         <div class="form-group">
@@ -116,6 +107,10 @@
                             <input type="number" id="telefono" name="telefono">
                         </div>
                         <div class="form-group">
+                            <label for="direccion">Direccion</label>
+                            <input type="text" id="direccion" name="direccion">
+                        </div>
+                        <div class="form-group">
                             <label for="entrega">Selección de entrega</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Opciones...</option>
@@ -155,6 +150,46 @@
     
             </div>
         </section>
+        <div class="contact-container">
+            <div class="enroll">
+                <h2>Contactanos</h2>
+            </div>
+            <section class="newsletterContainer" id="Contacto">
+                <div id="backgroudTransparent">
+                    <div class="tituloNewsletter">
+                        <h1>RECIBE LAS ÚLTIMAS NOVEDADES DE FERNATEX!</h1>
+                    </div>
+
+                    <div class="newsletterBox">
+                        <form action="" method="POST" >
+                            <label>Dejanos tu email</label>
+                            <input type="text" name="email">
+                            <button type="submit" class="button2" style="vertical-align:middle">Enviar</button>
+                        </form>
+                        <div class="socialBox">
+                            <div class="iconsContainer">
+                                <li class="icon whatsapp">
+                                    <span><a href="https://api.whatsapp.com/send?phone=541134209000""><i class="fa fa-whatsapp" ></i></a></span>
+                                </li>
+                                <li class="icon facebook">
+                                    <span><a href="https://www.facebook.com/JPpigmento/"><i class="fab fa-facebook-f" ></i></a></span>
+                                </li>
+                                <li class="icon instagram">
+                                    <span><a href="https://www.instagram.com/fernatex_srl/?hl=en"><i class="fa fa-instagram" ></i></a></span>
+                                </li>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!----- FIN Newsletter  ----->
+                
+
+            <%- include('./partials/footer') %>
+        </div>
+        <div id="suriSlug"><h4>Desarrolado por <a href="">Suri.it</a> </h4></div>
     </main>
 
 

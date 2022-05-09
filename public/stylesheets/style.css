@@ -325,7 +325,9 @@ header .menu button:hover{
   color: white;
   font-size: 18px;
 }
-
+.homeBtn{
+  display: none;
+}
 .menu ul li a:hover {
   cursor: pointer;
   border-bottom: thin dashed;
@@ -1051,6 +1053,7 @@ footer span {
   border-radius: 5px;
   font-size: 22px;
   font-weight: 600;
+  cursor: pointer;
 }
 footer span:hover{
   background-color:#F27983;
