@@ -145,9 +145,9 @@ div.body-container .aboutContainer p {
     align-items: center;
 }
   .estamapados-categories {
-  justify-content:center;
-  padding: 0;
-  margin: 0;
+    justify-content:center;
+    padding: 0;
+    margin: 0;
   }
   #view-Rayados .estamapados-categories {
     justify-content:center;
@@ -402,6 +402,9 @@ div.body-container .aboutContainer p {
 }
 
 @media all and (max-width: 425px) {
+  div.body-container h1 {
+    font-size: 1.8em;
+}
   h2 {
     font-size: 24px;
   }
@@ -517,7 +520,7 @@ div.body-container .aboutContainer p {
 
   .newsletterContainer{
 
-    height:75vh;
+    height:85vh;
   }
   .newsletterContainer #backgroudTransparent {
     padding-bottom: 0px;
@@ -529,14 +532,118 @@ div.body-container .aboutContainer p {
     height: 17%;
   }
 
+  .newsletterContainer form input {
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
   #suriSlug{
-    margin-top: 540vh;
-    padding-bottom:20px;
+    margin-top: 550vh;
+    padding-bottom: 5px;
   }
 }
 
-@media all and (max-width: 325px) {
-  .socialBox{ 
-    width: 50%;
-  } 
+
+
+
+@media  (max-height: 852px) and (max-width: 395px) {
+  #suriSlug{
+    margin-top: 555vh;
+    padding-bottom:5px;
+  }
 }
+
+@media all and  (max-height: 680px)  {
+  .aboutContainer {
+    padding: 10px 10px;
+    height: 110vh;
+  }
+  div.body-container .aboutContainer h1 {
+    font-size: 2rem;
+  }
+  .aboutContainer .imagesContainer {
+    height: 35vh;
+  }
+  
+    .newsletterContainer {
+      height: 100vh;
+  }
+
+  .newsletterBox button {
+    padding: 10px 25px;
+  }
+
+  #suriSlug{
+    margin-top: 610vh;
+    padding: 0px 5px;
+    padding-bottom:5px;
+  }
+}
+
+@media (max-height: 740px) and (max-width: 560px){
+  .newsletterContainer {
+    height: 100vh;
+}
+
+.newsletterBox button {
+  padding: 10px 25px;
+}
+
+#suriSlug {
+  margin-top: 595vh;
+  padding-bottom: 0px;
+}
+}
+@media (max-height: 780px) and (max-width: 360px){
+  .newsletterContainer {
+    height: 90vh;
+}
+
+.newsletterBox button {
+  padding: 10px 25px;
+}
+
+#suriSlug{
+  margin-top: 576vh;
+  padding: 0px 5px;
+  padding-bottom:5px;
+}
+}
+
+@media (max-height: 780px) and (max-width: 340px) {
+  .newsletterContainer {
+    height: 95vh;
+}
+
+.newsletterBox button {
+  padding: 10px 25px;
+}
+
+#suriSlug{
+  margin-top: 587vh;
+
+}
+}
+@media (max-width: 920px) and (min-height: 1000px) {
+
+  #suriSlug{
+    margin-top: 518vh;
+  
+  }
+}
+@media (max-width: 780px) and (min-height: 1000px) {
+
+  #suriSlug{
+    margin-top: 540vh;
+  
+  }
+}
+@media (max-width: 920px) and (min-height: 1200px) {
+
+  #suriSlug{
+    margin-top: 500vh;
+  
+  }
+}
+
+
