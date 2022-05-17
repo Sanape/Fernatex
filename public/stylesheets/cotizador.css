@@ -6,7 +6,9 @@ header {
   z-index:100;
 }
 
-
+.menu{
+  width: 65%;
+}
 
 button{
   border-radius: 3px !important;
@@ -37,21 +39,24 @@ a:visited {
   background: url('../images/ui/Tarjeta fondo cotizador.png') no-repeat transparent;
   background-size: cover;
   position:fixed;
+  z-index: 99;
 }
-
+.menu ul{
+justify-content:flex-end;
+}
 .menu ul li{
-  visibility: hidden;
+display: none;
+}
+#drawer ul li{
+  display: none;
+}
+.menu ul a{
+  margin:0px 15px;
 }
 .homeBtn{
   display: block;
 }
-.homeBtn button{
-  padding: 0 10px;
-}
-.homeBtn strong{
-  padding: 0px 4px;
-  font-size: 25px;
-}
+
 
 
 .cotizadorContainer{
@@ -125,6 +130,12 @@ a:visited {
   color:#F27983;
   font-weight: 600;
 }
+.form-group#estampadoPersonalizado.hidden{
+  opacity: 0.5;
+}
+.form-group#estampado.hidden{
+  display: none;
+}
 
 .form-group label{
   margin: 5px 0;
@@ -186,16 +197,17 @@ button.sub-btn:hover{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  z-index: 101;
 }
 .newsletterContainer {
-  height: 32vw;
+  height: 70vh;
 }
 .newsletterContainer #backgroudTransparent {
   padding-top: 50px;
 }
 
 #suriSlug {
-  margin-top: 165vh;
+  margin-top: 175vh;
 }
 
 #suriSlug h4 a{
@@ -204,4 +216,170 @@ button.sub-btn:hover{
 #suriSlug h4 a:hover{
   color: #7B77F2 !important;
   text-decoration: none !important;
+}
+
+@media all and (max-width: 1400px) {
+
+  .menu{
+    width:70%;
+  }
+
+  .menu ul li{
+    visibility: hidden;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+@media all and (max-width: 1220px) {
+
+  .menu{
+    width:70%;
+  }
+  .menu ul li a {
+    font-size: 17px;
+}
+  .logo2Container img {
+    width: 7vw;
+    height: 7vw;
+}
+
+}
+
+@media all and (max-width: 1000px) {
+
+  .menuNavegacion {
+    margin: 0 10px;
+    justify-content: space-between;
+}
+  
+  .menu button {
+    font-size: 13px;
+  }
+  .menu button span {
+    font-size: 14px;
+  } 
+
+  .logo2Container{
+    cursor: pointer;
+  }
+
+  .newsletterContainer{
+
+    height:75vh;
+  }
+  footer span {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+
+  #suriSlug {
+    margin-top: 180vh;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  .menu button {
+    font-size: 12px;
+  }
+  .menu button span {
+    font-size: 13px;
+
+  }
+  .menu ul a {
+    margin: 0px 10px;
+}
+  .newsletterContainer {
+    height: 85vh;
+  }
+
+
+  .newsletterBox{
+
+    width: 70%;
+    height: 12%;
+  }
+
+
+
+
+
+  footer{
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+  }
+  footer span {
+    padding: 5px 10px;
+    font-size: 20px;
+    margin: 10px 5px;
+  }
+
+  #suriSlug {
+    margin-top: 190vh;
+  }
+}
+
+@media all and (max-width: 625px) {
+  .menu ul a{
+    margin:0 5px;
+  }
+  .menu button {
+    padding: 5px 5px;
+    font-size: 10px;
+  }
+  .menu button span {
+    font-size: 12px;
+
+  }
+
+
+  .newsletterBox{
+
+    width: 75%;
+    height: 14%;
+  }
+  .newsletterContainer form input {
+
+    height: 45px;
+    padding: 5px 15px;
+    font-size: 18px;
+
+}
+
+
+}
+
+@media all and (max-width: 425px) {
+
+
+  .newsletterContainer{
+
+    height:80vh;
+  }
+  .newsletterContainer #backgroudTransparent {
+    padding-bottom: 0px;
+    padding-top: 50px;
+}
+  .newsletterBox{
+
+    width: 85%;
+    height: 17%;
+  }
+
+
+}
+
+@media all and (max-width: 325px) {
+  .socialBox{ 
+    width: 50%;
+  } 
 }

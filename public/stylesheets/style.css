@@ -353,7 +353,6 @@ header.sticky .menu ul li a:hover {
 }
 
 .logo2Container img{
-  margin-top: 10px;
   width:8vw;
   height:8vw;
 }
@@ -400,7 +399,7 @@ header.sticky .menu ul li a:hover {
   align-items:flex-start;
   flex-direction: column;
   color:white;
-  padding: 10vw 100px;
+  padding: 10vw 5%;
   text-shadow: 0px 2px 6px rgb(0 0 0 / 45%);
 }
 .presentacionTransparent h1{
@@ -415,7 +414,7 @@ header.sticky .menu ul li a:hover {
   margin-top:30px;
   max-width: 70%;
   font-size: 1.8rem;
-
+  text-align:justify;
 }
 .presentacionTransparent h1::after {
   content: '';
@@ -491,41 +490,25 @@ div.body-container  h1{
   filter: drop-shadow(0 -1px 4px rgb(0 0 0 / 65%));
   transition: all 1s;
   animation-name: moveUpDown;
-  animation-duration: 2s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: forward;
 }
 #flapUp:hover{
   animation: none;
-  bottom: 120px;
+  bottom: 14vh;
 }
 @keyframes moveUpDown {
-  0%{
-    bottom: 110px;
+  from{
+    bottom: 12vh;
   }
-  10%{
-    bottom: 112px;
-  }
-  20%{
-    bottom: 114px;
-  }
-  40%{
-    bottom: 116px;
-  }
+
   50%{
-    bottom: 118px;
+    bottom: 14vh;
   }
-  65%{
-    bottom: 116px;
-  }
-  75%{
-    bottom: 114px;
-  }
-  85%{
-    bottom: 112px;
-  }
-  100%{
-    bottom: 110px;
+
+  to{
+    bottom: 12vh;
   }
 
 }
@@ -567,7 +550,6 @@ div.body-container  h1{
   justify-content: flex-start;
   align-items: center;
   padding: 5px 20px;
-  padding-left:80px;
   overflow-y:scroll;
   max-height:80vh;
   position: relative;
@@ -592,7 +574,7 @@ div.body-container  h1{
   width: 100%;
 }
 .estamapados-categories h3 {
-  background-color: transparent;
+  background-color: white;
   border-radius:10px;
   margin:10px 20px;
   margin-bottom: 40px;
@@ -605,7 +587,6 @@ div.body-container  h1{
 
 #view-Rayados .estamapados-categories{
   justify-content: flex-start;
-  padding-left: 10%;
 
 }
 
@@ -625,12 +606,18 @@ div.body-container  h1{
 .estamapados-catalogo .list{
   margin:0;
   margin-top: 40px;
-  max-width:51%;
+  max-width: 61%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 .estamapados-catalogo .list img {
-  margin: 20px 40px;
-  width: 320px;
-  height: 350px;
+    margin: 15px 20px;
+    width: 19vw;
+    height: 33vh;;
   border-radius:10px;
   box-shadow: 0 3px 12px rgb(0 0 0 / 40%);
 }
@@ -640,6 +627,7 @@ div.body-container  h1{
 }
 .estamapados-view {
   position: relative;
+  width: 100%;
 }
 .listContainer{
   display: flex;
@@ -647,16 +635,16 @@ div.body-container  h1{
   justify-content: space-evenly;
 }
 
-.estamapados-view .ilustration{
-  width: 720px;
-  height: 400px;
-  background-image: url(../images/ilustraciones/animales.svg);
+.estamapados-view .ilustration {
+  width: 35vw;
+  height: 420px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   position: sticky;
   z-index: 1;
   top: 15%;
+  margin-right: 20px;
 }
 .estamapados-view .ilustration.animales{
 
@@ -666,12 +654,10 @@ div.body-container  h1{
 .estamapados-view .ilustration.rayados{
 
   background-image: url(../images/ilustraciones/rayados.svg);
-  height: 574px;
 }
 .estamapados-view .ilustration.infantiles{
 
   background-image: url(../images/ilustraciones/infantiles.svg);
-  height: 535px;
 }
 
 
@@ -732,7 +718,7 @@ div.body-container  h1{
 .aboutContainer{
   box-sizing: border-box;
   margin-top: 70px;
-  padding: 40px 30px;
+  padding: 20px 15px;
   height:40vw;
   line-height:2;
   text-align: center;
@@ -741,6 +727,7 @@ div.body-container  h1{
   flex-direction: row;
   justify-content:space-around;
   align-items: center;
+  overflow: hidden;
 }
 .aboutContainer .aboutText{
   padding: 0px 15px;
@@ -789,13 +776,13 @@ div.body-container  h1{
   transition: all 0.5s;
 }
 
-.aboutContainer p{
+div.body-container .aboutContainer p{
   color:#0d0d0d;
-  font-size:18px !important;
+  font-size:16px ;
 }
-.aboutContainer h1{
+div.body-container .aboutContainer h1{
   color: #F27983;
-  font-size:3.5rem !important;
+  font-size:4rem;
 }
 #fondoTriangulo{
   /* background: url(../images/ui/Triangulo.png) no-repeat transparent; */
@@ -812,7 +799,7 @@ div.body-container  h1{
   background-attachment: fixed;
   background-clip: border-box;
   background-size: cover;
-  height:40vw;
+  height:95vh;
   position: relative;
   background: url('../images/ui/Tarjeta fondo cotizador.png') no-repeat transparent;
 }
@@ -863,8 +850,8 @@ div.body-container  h1{
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
-  width: 50%;
-  height: 7%;
+  width: 60%;
+  height: 10%;
 }
 
 .newsletterBox label{
@@ -903,10 +890,8 @@ div.body-container  h1{
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 40px;
-  padding-left: 30px;
-  padding-right: 50px;
-  height: 750px;
+
+  height: 85vh;
   line-height: 2;
   color: white;
   border-radius: 15px;
@@ -923,27 +908,18 @@ div.body-container  h1{
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  height: 100%;
 }
-.cotizadorImage {
-  z-index: 1;
-}
-.cotizadorImage img{
-  border-radius: 25px;
-  box-shadow: 0 3px 4px rgb(0 0 0 / 50%);
-  width:45vw;
-  height:60vh;
-}
+
 
 .cotizadorTexto{
   padding: 5px;
   max-width:50vw;
-  margin-right: 20px;
   text-align: center;
   background: #7B77F2;
   border-radius:  25px;
   box-shadow: 0 0px 4px #8b8b8b80 inset;
   z-index: 0;
-  margin-left: -16px;
 }
 .cotizadorTexto div{
   border: 4px dashed #fff;
@@ -968,14 +944,12 @@ div.body-container  h1{
 .cotizadorContenido button {
   border: none;
   color: #0D0D0D;
-  font-weight: bold !important;
-  font-size:23px !important;
+  font-weight: bold;
+  font-size:23px ;
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  font-weight: 500;
   width: 280px;
   cursor: pointer;
   box-shadow: 0 3px 4px rgb(0 0 0 / 50%);
@@ -1029,7 +1003,6 @@ div.body-container  h1{
   }
   to{
     transform: translateX(0px) translatey(0px);
-
   }
 }
 /* ---- footer ----*/ 
@@ -1069,7 +1042,7 @@ footer span:hover{
   color: white;
   font-size: 24px;
   font-weight: 500;
-  margin-top: 535vh;
+  margin-top: 575vh;
   padding:0 20px;
   padding-left: 30px;
 }
@@ -1082,215 +1055,3 @@ footer span:hover{
 }
 /* ---- Media Querys  ---- */
 
-@media all and (max-width: 1400px) {
-  .menu{
-    width:50%;
-  }
-}
-@media all and (max-width: 1220px) {
-  .menu{
-    width:55%;
-  }
-
-  .titulo-marcas h1{
-    font-size: 1.8em;
-  }
-
-  #fondoTriangulo{
-    background-position-y: -715px;
-    background-position-x: -650px;
-  }
-}
-
-@media all and (max-width: 991px) {
-
-  .menuNavegacion {
-    margin: 0 10px;
-    justify-content: space-between;
-}
-
-  .menu{
-    display:none;
-  }
-
-
-  .logo2Container{
-    cursor: pointer;
-  }
-
-  .aboutContainer{
-
-    margin-top: 65px;
-    padding: 40px 60px;
-    height:60vh;
-
-  }
-
-  .newsletterContainer{
-
-    height:60vh;
-  }
-
-}
-
-@media all and (max-width: 768px) {
-  .estampados h2 {
-    padding: 15px;
-    font-size: 35px;
-    letter-spacing: 2px;
-  } 
-
-  .aboutContainer h1{
-    font-size: 35px;
-  }
-  .aboutContainer p{
-    font-size: 14px;
-  }
-
-  #fondoTriangulo{
-    background-position-y: -222px;
-    background-position-x: -1250px;
-  }
-
-  .cotizadorHomeContainer{
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 30px;
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 150vh;
-    line-height: 2;
-    color: white;
-    border-radius: 15px;
-  }
-
-  .cotizadorTitulo h1{
-    display: block;
-    color: #D95959;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 0px 2px 6px rgb(0 0 0 / 40%);
-  }
-
-  .cotizadorImage img{
-    width:70vw;
-    height:55vh;
-  }
-}
-
-@media all and (max-width: 625px) {
-  .menuNavegacion {
-    margin: 0 20px;
-    justify-content: space-between;
-}
-  
-  .socialBox{ 
-    width: 40%;
-  } 
-
-  .iconsContainer .icon span{
-    height: 45px;
-    width: 45px;
-  }
-
-  .iconsContainer .icon span i {
-    line-height: 48px;
-  }
-
-  .aboutContainer h1{
-    font-size: 30px;
-  }
-  .aboutContainer p{
-    font-size: 12px;
-  }
-  .aboutContainer{
-    margin-top: 60px;
-    padding: 40px 40px;
-  }
-  .titulo-marcas h1{
-    font-size: 1.3em;
-  }
-
-  
-  .newsletterContainer{
-
-    height:65vh;
-  }
-  .newsletterBox{
-
-    width: 75%;
-    height: 14%;
-  }
-
-  #fondoTriangulo{
-    background-position-y: -145px;
-    background-position-x: -1450px;
-  }
-}
-
-@media all and (max-width: 425px) {
-  .socialBox{ 
-    width: 50%;
-  }
-
-  .iconsContainer .icon span{
-    height: 40px;
-    width: 40px;
-  }
-
-  .iconsContainer .icon span i {
-    line-height: 43px;
-    font-size: 22px;
-  }
-
-  header.sticky{
-    height: 50px;
-  }
-
-  header.sticky .logo-header img{
-    height: 45px;
-    width: 85px;
-  }
-
-  header.sticky .logo2Container img{
-    height: 50px;
-    width: 50px;
-  }
-
-  .estampados h2 {
-    padding: 10px;
-    font-size: 30px;
-    letter-spacing: 2px;
-  }
-  .aboutContainer h1{
-    font-size: 25px;
-  }
-  .aboutContainer p{
-    font-size: 12px;
-  }
-  .aboutContainer{
-    margin-top: 60px;
-    padding: 35px 25px;
-  }
-  .newsletterContainer{
-
-    height:65vh;
-  }
-  .newsletterBox{
-
-    width: 85%;
-    height: 17%;
-  }
-  .cotizadorImage img{
-    width:75vw;
-    height:50vh;
-  }
-}
-
-@media all and (max-width: 325px) {
-  .socialBox{ 
-    width: 50%;
-  } 
-}

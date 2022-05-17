@@ -1,0 +1,542 @@
+@media all and (max-width: 1400px) {
+  .menu{
+    width:65%;
+  }
+  .enroll h2 {
+    font-size:35px;
+    width:60%;
+  }
+
+  .estamapados-categories {
+    padding-right: 15vw;
+  }
+  #view-Rayados .estamapados-categories {
+    padding-left: 15vw;
+  }
+
+  div.body-container .aboutContainer h1{
+    font-size:3.2rem;
+  }
+
+  div.body-container .aboutContainer p {
+    font-size: 15px;
+}
+
+#suriSlug{
+  margin-top: 560vh;
+}
+
+}
+
+
+
+
+
+
+
+@media all and (max-width: 1220px) {
+  .menu{
+    width:70%;
+  }
+  .menu ul li a {
+    font-size: 17px;
+}
+  .logo2Container img {
+    width: 7vw;
+    height: 7vw;
+}
+
+.presentacionTransparent h1 {
+  font-size: 4.2rem;
+  padding-bottom: 8px;
+}
+
+.presentacionTransparent p {
+  margin-top: 40px;
+  max-width: 100%;
+  font-size: 1.55rem;
+}
+
+#flapUp {
+  left: 45%
+}
+
+.enroll h2 {
+  font-size:30px;
+  width:65%;
+}
+
+div.body-container h1 {
+  font-size: 4em;
+}
+
+.estamapados-categories {
+  padding-right: 11vw;
+
+}
+#view-Rayados .estamapados-categories {
+  padding-left: 11vw;
+}
+
+.estamapados-catalogo .list img {
+  margin: 15px 20px;
+  width: 20vw;
+  height: 25vh;
+}
+.estamapados-view .ilustration {
+  width: 36vw;
+  height: 420px;
+  margin-right: 20px;
+}
+
+div.body-container .aboutContainer h1{
+  font-size:2.5rem;
+}
+
+div.body-container .aboutContainer p {
+  font-size: 13px;
+}
+
+  .titulo-marcas h1{
+    font-size: 1.8em;
+  }
+
+  #suriSlug{
+    margin-top: 530vh;
+  }
+}
+
+@media all and (max-width: 1000px) {
+
+  h3{
+    font-size:25px;
+  }
+
+  .menuNavegacion {
+    margin: 0 10px;
+    justify-content: space-between;
+}
+
+  .menu{
+    display:none;
+  }
+
+
+  .logo2Container{
+    cursor: pointer;
+  }
+
+  .presentacionTransparent h1 {
+    font-size: 3.5rem;
+  }
+
+  .enroll h2 {
+    font-size:27px;
+    width:45%;
+  }
+
+  div.body-container h1 {
+    font-size: 3em;
+  }
+  .listContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+  .estamapados-categories {
+  justify-content:center;
+  padding: 0;
+  margin: 0;
+  }
+  #view-Rayados .estamapados-categories {
+    justify-content:center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .estamapados-catalogo .list{
+    max-width: 100%;
+  }
+  .estamapados-catalogo .list img {
+    margin: 15px 20px;
+    width: 30vw;
+    height: 25vh;
+  }
+  .estamapados-view .ilustration {
+    width: 60vw;
+    height: 460px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .aboutContainer {
+    margin-top: 0px;
+    padding: 40px 60px;
+    height:100vh;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .aboutContainer .imagesContainer {
+    width: 65vw;
+    height: 45vh;
+    margin-top: 40px;
+  }
+
+  .aboutContainer .aboutText {
+    height: 40vh;
+  }
+
+  .cotizadorHomeContainer .cotizadorContenido {
+    flex-direction: column;
+  }
+  .cotizadorTexto{
+
+    max-width:85vw;
+
+  }
+  
+
+  @keyframes move {
+    from{
+      transform: translateX(0px) translatey(0px);
+    }
+    50%{
+      transform: translateX(0px) translatey(30px);
+    }
+    to{
+      transform: translateX(0px) translatey(0px);
+    }
+  }
+
+  .newsletterContainer{
+
+    height:75vh;
+  }
+  footer span {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+
+  #suriSlug{
+    margin-top: 545vh;
+  }
+}
+
+@media all and (max-width: 768px) {
+  
+  h3{
+    font-size:20px;
+  }
+  .presentacionTransparent h1 {
+    font-size: 2.8rem;
+  }
+  
+  .estampados h2 {
+    padding: 15px;
+    font-size: 35px;
+    letter-spacing: 2px;
+  }
+
+  #flapUp {
+    left: 43%
+  }
+
+  .enroll h2 {
+    font-size:27px;
+    width:55%;
+  }
+  
+  div.body-container h1 {
+    font-size: 2.3em;
+  }
+
+
+  
+  .aboutContainer {
+    padding: 30px 40px;
+  }
+
+  .aboutContainer .imagesContainer {
+    width: 68vw;
+    height: 38vh;
+    margin-top: 35px;
+  }
+
+  .aboutContainer .aboutText {
+    height: 45vh;
+  }
+  .aboutContainer h1{
+    font-size: 35px;
+  }
+  .aboutContainer p{
+    font-size: 14px;
+  }
+
+  .newsletterContainer {
+    height: 85vh;
+  }
+
+
+  .newsletterBox{
+
+    width: 70%;
+    height: 12%;
+  }
+
+
+
+
+
+  footer{
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+  }
+  footer span {
+    padding: 5px 10px;
+    font-size: 20px;
+    margin: 10px 5px;
+  }
+
+  #suriSlug{
+    margin-top: 550vh;
+  }
+}
+
+@media all and (max-width: 625px) {
+  div.body-container p {
+    font-size: 18px;
+}
+  .menuNavegacion {
+    margin: 0 20px;
+    justify-content: space-between;
+}
+  .presentacionTransparent h1 {
+    font-size: 3.2rem;
+  }
+  .presentacionTransparent h1.underline::after{
+    opacity: 0;
+  }
+  .presentacionTransparent p {
+    margin-top: 50px;
+    max-width: 80%;
+    font-size: 1.55rem;
+  }
+
+  #flapUp {
+    left: 41%
+  }
+
+  .enroll h2 {
+    font-size:20px;
+    width:62%;
+  }
+
+  div.body-container h1 {
+    font-size: 2em;
+  }
+
+  .aboutContainer {
+    padding: 30px 10px;
+  }
+  .aboutContainer .imagesContainer {
+    width: 80vw;
+    height: 40vh;
+    margin-top: 1vw;
+  }
+  .aboutContainer .aboutText {
+    height: 50vh;
+    padding: 0px;
+  }
+  div.body-container .aboutContainer h1 {
+    font-size: 2.4rem;
+  }
+  div.body-container .aboutContainer p {
+    font-size: 12px;
+  }
+
+  .socialBox{ 
+    width: 40%;
+  } 
+
+  .iconsContainer .icon span{
+    height: 45px;
+    width: 45px;
+  }
+
+  .iconsContainer .icon span i {
+    line-height: 48px;
+  }
+
+  .aboutContainer h1{
+    font-size: 30px;
+  }
+  .aboutContainer p{
+    font-size: 12px;
+  }
+
+  .titulo-marcas h1{
+    font-size: 1.3em;
+  }
+
+  
+
+  .newsletterBox{
+
+    width: 75%;
+    height: 14%;
+  }
+  .newsletterContainer form input {
+
+    height: 45px;
+    padding: 5px 15px;
+    font-size: 18px;
+
+}
+
+#suriSlug{
+  margin-top: 558vh;
+  padding-bottom:20px;
+}
+}
+
+@media all and (max-width: 425px) {
+  h2 {
+    font-size: 24px;
+  }
+  .presentacionTransparent h1 {
+    font-size: 2.5rem;
+  }
+  .presentacionTransparent p {
+    margin-top: 50px;
+    max-width: 100%;
+    font-size: 1.25rem;
+  }
+
+  #flapUp {
+    left: 40%
+  }
+
+  .enroll h2 {
+    font-size:14px;
+    width:65%;
+  }
+
+  .socialBox{ 
+    width: 50%;
+  }
+
+  .iconsContainer .icon span{
+    height: 40px;
+    width: 40px;
+  }
+
+  .iconsContainer .icon span i {
+    line-height: 43px;
+    font-size: 22px;
+  }
+
+  header.sticky{
+    height: 60px;
+  }
+
+  header.sticky .logo-header img{
+    height: 45px;
+    width: 85px;
+  }
+
+  header.sticky .logo2Container img{
+    height: 50px;
+    width: 50px;
+  }
+  header.sticky #drawer {
+    top: 60px;
+  }
+  .estampados h2 {
+    padding: 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .estamapados-catalogo {
+    padding: 5px 10px;
+}
+  .estamapados-catalogo .list img {
+    margin: 15px 15px;
+    width: 30vw;
+    height: 15vh;
+  }
+
+  .estamapados-view .ilustration {
+    height: 400px;
+  }
+
+  .aboutContainer {
+    padding: 20px 10px;
+  }
+  .aboutContainer .imagesContainer {
+    width: 75vw;
+    height: 30vh;
+    margin-top: 10px;
+  }
+  .aboutContainer .aboutText {
+    height: 45vh;
+    padding: 0px;
+  }
+  div.body-container .aboutContainer h1 {
+    font-size: 2.2rem;
+  }
+  div.body-container .aboutContainer p {
+    font-size: 11px;
+  }
+
+  .cotizadorContenido button {
+    font-size:19px;
+    padding: 10px;
+    width: 220px;
+    height:60px;
+    bottom:0;
+  }
+  .cotizadorContenido .btnBox{
+    width: 250px;
+    height: 80px;
+  
+  }
+
+  .cotizadorContenido .btnBox:hover #btnShadow{
+    bottom: 0px;
+    right: 20px;
+  }
+
+  .cotizadorContenido #btnShadow{
+    width: 220px;
+    height:60px;
+    bottom: -10px;
+    right: 8px;
+  }
+
+  .newsletterContainer{
+
+    height:75vh;
+  }
+  .newsletterContainer #backgroudTransparent {
+    padding-bottom: 0px;
+    padding-top: 50px;
+}
+  .newsletterBox{
+
+    width: 85%;
+    height: 17%;
+  }
+
+  #suriSlug{
+    margin-top: 540vh;
+    padding-bottom:20px;
+  }
+}
+
+@media all and (max-width: 325px) {
+  .socialBox{ 
+    width: 50%;
+  } 
+}

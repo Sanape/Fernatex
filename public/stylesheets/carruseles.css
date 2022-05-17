@@ -143,8 +143,15 @@
 
 /* ---- Inicio carruseles OFERTAS ---- */
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 1000px) {
 
+  .carousel-categories h2 {
+    margin:10px 5px;
+    margin-bottom: 45px;
+    font-size: 20px;
+    padding: 5px 15px;
+  }
+  
   .slick {
     width: 200px;
     margin: 0 12px;
@@ -156,6 +163,12 @@
 }
 @media all and (max-width: 768px) {
 
+  .carousel-categories h2 {
+    margin:10px 5px;
+    margin-bottom: 45px;
+    font-size: 16px;
+    padding: 5px 10px;
+  }
 
   .slick-arrow {
     width: 30px;
@@ -163,6 +176,14 @@
 }
 }
 @media all and (max-width: 625px) {
+
+  .carousel-categories h2 {
+    margin:10px 5px;
+    margin-bottom: 45px;
+    font-size: 13px;
+    padding: 5px 10px;
+    letter-spacing:3px
+  }
 
   .slick {
     width: 145px;
@@ -175,12 +196,20 @@
 }
 @media all and (max-width: 425px) {
 
+  .carousel-categories h2 {
+    margin:10px 5px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    padding: 2px 8px;
+    letter-spacing:2px
+  }
+
   .slick {
-    width: 125px;
+    width: 95px;
     margin: 0 10px;
   }
 
   .slick a img {
-    height: 100px;
+    height: 90px;
   }
 }

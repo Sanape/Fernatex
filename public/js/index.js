@@ -23,7 +23,8 @@ function scroolTo(cat) {
 }
 
 const Colors = ['#e6b251', '#4e91e6'];
-const Words = ['pasión', 'entusiasmo', 'compromiso', 'seriedad'];
+//const Words = ['pasión', 'entusiasmo', 'compromiso', 'seriedad'];
+const Words = ['pasión', 'compromiso'];
 //const Banners = ['deLaFabrica', 'deLaFabrica1', 'deLaFabrica2'];
 let reset = (limit, i) => {
   i += 1;
