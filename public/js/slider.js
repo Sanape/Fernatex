@@ -5,13 +5,16 @@ function autoPlay(carousel) {
 }
 
 const AnimalImages = [
-  '1.jpg',
-  '2.jpg',
-  '3.jpg',
-  '4.jpg',
-  '5.jpg',
-  '6.jpg',
-  '7.jpg',
+  '11.020.svg',
+  '11.063.svg',
+  '11.199.svg',
+  '11.219.Kitten.svg',
+  '11.279.Animal.svg',
+  '11.285.Constanza.svg',
+  '11.316.svg',
+  '11.326.Hanna.svg',
+  '11.400.svg',
+  '30.779.svg',
 ];
 const InfantilImages = [
   '1.jpg',
@@ -92,9 +95,10 @@ function ChangeSlickCategorie(cat) {
         var a = document.createElement('a');
         a.href = '/';
         var picture = document.createElement('picture');
-        var img = document.createElement('img');
-        img.alt = AnimalImages[i].toString();
-        img.src = `images/estampados/animal/${AnimalImages[i]}`;
+        var img = document.createElement('div');
+        //img.alt = AnimalImages[i].toString();
+        //img.src = `images/estampados/animal/${AnimalImages[i]}`;
+        img.style.backgroundImage = `url(images/estampados/animal/${AnimalImages[i]})`;
         picture.appendChild(img);
         a.appendChild(picture);
         div.appendChild(a);

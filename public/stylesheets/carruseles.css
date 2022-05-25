@@ -95,6 +95,17 @@
   font-size: 15px;
   display: block;
 }
+.slick a picture div{
+  object-fit: cover;
+  height: 250px;
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 50%);
+  transition: .3s ease-in-out;
+  margin: 5px;
+  background-size: cover;
+  background-position: center;
+}
 .slick a img{
   object-fit: cover;
   height: 250px;
@@ -102,6 +113,9 @@
   border-radius: 4px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
   transition: .3s ease-in-out;
+}
+.slick a div:hover{
+  opacity: .85;
 }
 .slick a img:hover{
   opacity: .85;
@@ -160,6 +174,11 @@
   .slick a img {
     height: 160px;
   }
+
+  .slick a picture div{
+    height: 160px;
+    width: 210px;
+  }
 }
 @media all and (max-width: 768px) {
 
@@ -193,6 +212,11 @@
   .slick a img {
     height: 120px;
   }
+
+  .slick a picture div{
+    height: 120px;
+    width: 170px;
+  }
 }
 @media all and (max-width: 425px) {
 
@@ -211,5 +235,10 @@
 
   .slick a img {
     height: 90px;
+  }
+
+  .slick a picture div{
+    height: 90px;
+    width: 140px;
   }
 }
