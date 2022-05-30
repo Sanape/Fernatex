@@ -369,7 +369,7 @@ header.sticky .menu ul li a:hover {
   background-position: center;
   position: fixed;
   transition: background 1s linear;
-  animation: slide 10s infinite;
+  animation: slide 20s infinite;
 }
 
 

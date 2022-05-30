@@ -37,48 +37,50 @@
                           </div>
                           <div >      
                         </div>
-                        <button type="button" class="next-btn">Seleccionar estampado</button>
+                        <button type="button" class="next-btn" id="nextstep1">Seleccionar estampado</button>
                     </div>
     
                     <div class="step step-2">
                         <div class="form-group" id="estampado">
                             <label for="tipoEstampado">Establecer estampado</label>
-                            <select class="form-select" aria-label="Default select example" name="estampado" placeholder="tipo de estampado">
+                            <select class="form-select" aria-label="Default select example" name="estampado" placeholder="tipo de estampado" id="tipoEstampado">
                                 <option value="all">Todos</option>
                                 <option value="Animal">Animal</option>
                                 <option value="Infantil">Infantil</option>
                                 <option value="Rayados">Rayados</option>
                             </select>
                             
-                            <div class="imageCotizador">
+                            <!-- <div class="imageCotizador">
                                 <div class="column">
-                                    <img src="/images/estampados/animal/1.jpg" alt="Snow" style="width:100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;" onclick="selectImage(this)">
+                                    <img src="/images/estampados/animal/11.020.svg" alt="Snow" style="width:100%;height: 100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;" onclick="selectImage(this)">
                                   </div>
                                   <div class="column">
-                                    <img src="/images/estampados/infantil/1.jpg" alt="Forest" style="width:100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
+                                    <img src="/images/estampados/infantil/1.jpg" alt="Forest" style="width:100%;height: 100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
                                   </div>
                                   <div class="column">
-                                    <img src="/images/estampados/rayados/1.jpg" alt="Mountains" style="width:100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
+                                    <img src="/images/estampados/rayados/1.jpg" alt="Mountains" style="width:100%;height: 100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
                                   </div>
                                   <div class="column">
-                                    <img src="/images/estampados/animal/1.jpg" alt="Snow" style="width:100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
+                                    <img src="/images/estampados/animal/11.063.svg" alt="Snow" style="width:100%;height: 100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
                                   </div>
                                   <div class="column">
-                                    <img src="/images/estampados/infantil/1.jpg" alt="Forest" style="width:100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
+                                    <img src="/images/estampados/infantil/1.jpg" alt="Forest" style="width:100%;height: 100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
                                   </div>
                                   <div class="column">
-                                    <img src="/images/estampados/rayados/1.jpg" alt="Mountains" style="width:100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
+                                    <img src="/images/estampados/rayados/1.jpg" alt="Mountains" style="width:100%;height: 100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
                                   </div>
                                   <div class="column">
-                                    <img src="/images/estampados/animal/1.jpg" alt="Snow" style="width:100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
+                                    <img src="/images/estampados/animal/11.219.Kitten.svg" alt="Snow" style="width:100%;height: 100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
                                   </div>
                                   <div class="column">
-                                    <img src="/images/estampados/infantil/1.jpg" alt="Forest" style="width:100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
+                                    <img src="/images/estampados/infantil/1.jpg" alt="Forest" style="width:100%;height: 100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
                                   </div>
                                   <div class="column">
-                                    <img src="/images/estampados/rayados/1.jpg" alt="Mountains" style="width:100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
+                                    <img src="/images/estampados/rayados/1.jpg" alt="Mountains" style="width:100%;height: 100%; box-shadow: 0px 3px 6px rgba(0,0,0,0.4); cursor: pointer;">
                                   </div>
-                            </div>
+                            </div> -->
+                        </div>
+                        <div id="tableEstampados">
                         </div>
 
                         <div class="form-group" id="estampadoPersonalizado">
@@ -86,8 +88,8 @@
                             <input class="form-control" type="file"  name="estampado personalizado" onclick="selectedFile()">
                             </p>
                         </div>
-                        <button type="button" class="prev-btn">Anterior</button>
-                        <button type="button" class="next-btn">Ingresar datos de Contacto</button>
+                        <button type="button" class="prev-btn" id="prevstep2">Anterior</button>
+                        <button type="button" class="next-btn" id="nextstep2">Ingresar datos de Contacto</button>
                     </div>
     
                     <div class="step step-3">
@@ -114,8 +116,8 @@
                                 <option selected value="retiro">Retiro</option>
                             </select>
                         </div>
-                        <button type="button" class="prev-btn">Anterior</button>
-                        <button type="button" class="sub-btn" data-toggle="modal" data-target="#exampleModalCenter">
+                        <button type="button" class="prev-btn" id="prevstep3">Anterior</button>
+                        <button type="button" class="sub-btn" data-toggle="modal" data-target="#exampleModalCenter" id="nextstep3">
                           Confirmar Cotización
                          </button>
     
