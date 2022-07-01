@@ -16,6 +16,7 @@
 }
 .Carousel h3{
   letter-spacing: 2px;
+  color:#80cec1;
 }
 .Carousel h2{
   color: #F26363;
@@ -45,7 +46,8 @@
 
 }
 .carousel-categories h2:hover{
-  background-color: #D95959;
+  background-color: #ecb0b0;
+  border: 2px solid #ecb0b0;
   color: #fff;
 
 }
@@ -54,6 +56,8 @@
 {
   color: #fff;
   background-color: #F26363;
+  border: 2px solid #F26363;
+
 }
 /* images */
 
