@@ -410,3 +410,28 @@ button.sub-btn:hover{
     width: 50%;
   } 
 }
+
+
+@media (max-height: 690px) and (max-width: 1440px) {
+
+
+  #suriSlug{
+    margin-top: 180vh;
+  }
+
+  .cotizadorContainer {
+    max-height: 530px;
+    margin-top: 70px;
+  }
+
+  #tableEstampados {
+    height: 250px;
+  }
+
+
+  button.next-btn, button.prev-btn, button.sub-btn {
+      margin-top: 10px;
+      padding: 5px 20px;
+      font-size: 18px;
+  }
+}

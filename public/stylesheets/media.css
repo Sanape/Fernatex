@@ -28,8 +28,19 @@
 
 }
 
+@media (max-height: 690px) and (max-width: 1440px) {
+  div.body-container h1 {
+    font-size: 3rem;
+  }
+  
+  .cotizadorTexto img {
+    width: 125px;
+}
 
-
+  #suriSlug{
+    margin-top: 630vh;
+  }
+}
 
 
 
